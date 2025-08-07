@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Testimonials | VI Bankruptcy</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --vi-1: #1B3940; /* Deep Teal */
+      --vi-2: #132326; /* Midnight */
+      --vi-3: #59453E; /* Brown‑Gray */
+      --vi-4: #A68D85; /* Taupe */
+      --vi-5: #D9C6BF; /* Shell */
+      --vi-gold: #BD9E07; /* accent line */
+      --vi-nav: #1C1F19; /* navigation bar */
+      --vi-gray: #F4F4F4; /* utility gray */
+    }
+
+    body {
+      margin: 0;
+      font-family: "Open Sans", Arial, sans-serif;
+      color: var(--vi-2);
+      line-height: 1.6;
+      background: #fff;
+    }
+
+    /* Background helpers */
+    .bg-white { background: #fff; color: var(--vi-2); }
+    .bg-gray  { background: var(--vi-gray); color: var(--vi-2); }
+
+    /* Header */
+    .site-header {
+      background: var(--vi-nav);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.75rem 1.25rem;
+      border-bottom: 1px solid var(--vi-gold);
+    }
+    .site-header nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 1rem;
+      font-weight: 600;
+    }
+    .site-header nav a:hover { text-decoration: underline; }
+    .logo-link img { height: 48px; width: auto; }
+
+    /* Section base */
+    section { padding: 3rem 1.25rem; }
+
+    h1 {
+      font-family: "Merriweather", serif;
+      font-size: 2.5rem;
+      color: var(--vi-1);
+      text-align: center;
+      margin-top: 0;
+    }
+
+    .subtitle {
+      text-align: center;
+      margin-top: 0.5rem;
+      color: var(--vi-2);
+    }
+
+    /* Testimonials */
+    .testimonials {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    blockquote {
+      position: relative;
+      margin: 0 0 1.5rem;
+      padding: 1.25rem 1.5rem 1.25rem 2.75rem;
+      background: var(--vi-1);
+      border-left: 4px solid var(--vi-gold);
+      font-style: italic;
+      color: #fff;
+    }
+    blockquote::before {
+      content: "\201C";
+      position: absolute;
+      left: 1rem;
+      top: 0.5rem;
+      font-size: 2rem;
+      color: var(--vi-gold);
+      font-family: "Merriweather", serif;
+    }
+    blockquote cite {
+      display: block;
+      margin-top: 0.75rem;
+      font-style: normal;
+      font-weight: 600;
+      color: var(--vi-5);
+    }
+
+    /* CTA */
+    .cta { text-align: center; }
+    .btn {
+      display: inline-block;
+      background: var(--vi-1);
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-top: 1rem;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--vi-1);
+      color: #fff;
+      padding: 2rem 1.25rem;
+      font-size: 0.875rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a href="/" class="logo-link">
+      <img src="https://imagedelivery.net/9748736d8674bad21f5e685fa96db7cd/b0e1c617-ab4f-4cec-fcd3-069434816600/public" alt="viBankruptcy logo" />
+    </a>
+    <nav>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#why">Why Us</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="bg-white" id="testimonials">
+    <h1>Testimonials</h1>
+    <p class="subtitle">Hear from Our Clients</p>
+    <div class="testimonials">
+      <blockquote>
+        <p><strong>I was drowning in debt and considering bankruptcy as a last resort. Robert Pohl treated me with respect and patience from day one.</strong> He answered all my questions and guided me through a Chapter&nbsp;7 bankruptcy that wiped out almost $50,000 of credit card and medical bills. I'm now debt-free and it feels like I can breathe again. I highly recommend Mr.&nbsp;Pohl to anyone in the Virgin Islands who needs help.</p>
+        <cite>&mdash; C.M., St.&nbsp;Thomas</cite>
+      </blockquote>
+      <blockquote>
+        <p><strong>Our small business in St.&nbsp;Croix was hit hard in 2020 and we fell behind on loans and taxes.</strong> Robert helped us file a Subchapter&nbsp;V bankruptcy. We stayed open, reorganized our debts, and a year later, our business is stable and thriving. We are so grateful for the second chance.</p>
+        <cite>&mdash; L.T., Christiansted</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <section class="cta bg-white">
+    <p>Your story could be next. Let us help you write a debt-free future.</p>
+    <a href="index.html#contact-form" class="btn">Contact Us</a>
+  </section>
+
+  <footer>
+    &copy; 2025 viBankruptcy.com · Law Office of Robert Pohl
+  </footer>
+</body>
+</html>
