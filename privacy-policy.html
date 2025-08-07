@@ -49,6 +49,23 @@
       font-weight: 600;
     }
     .site-header nav a:hover { text-decoration: underline; }
+    .site-header nav .dropdown { position: relative; display: inline-block; }
+    .site-header nav .dropdown-content {
+      display: none;
+      position: absolute;
+      background: var(--vi-nav);
+      padding: 0.5rem 0;
+      min-width: 200px;
+      z-index: 1;
+    }
+    .site-header nav .dropdown-content a {
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      margin: 0;
+      padding: 0.5rem 1rem;
+    }
+    .site-header nav .dropdown:hover .dropdown-content { display: block; }
     .logo-link img { height: 48px; width: auto; }
 
     section { padding: 3rem 1.25rem; }
@@ -60,12 +77,18 @@
       <img src="https://imagedelivery.net/9748736d8674bad21f5e685fa96db7cd/b0e1c617-ab4f-4cec-fcd3-069434816600/public" alt="viBankruptcy logo" />
     </a>
     <nav>
-        <a href="index.html#services">Services</a>
-        <a href="index.html#why">Why Us</a>
-        <a href="testimonials.html">Testimonials</a>
-        <a href="faq.html">FAQ</a>
-        <a href="contact.html">Contact</a>
-        <a href="pay-online.html" class="btn" style="margin-left:1rem; margin-top:0; padding:0.5rem 1rem;">Pay Online</a>
+      <a href="about.html">About</a>
+      <div class="dropdown">
+        <a href="javascript:void(0)">Services ▾</a>
+        <div class="dropdown-content">
+          <a href="personal-bankruptcy.html">Personal Bankruptcy</a>
+          <a href="business-bankruptcy.html">Business Bankruptcy</a>
+        </div>
+      </div>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+      <a href="pay-online.html" class="btn" style="margin-left:1rem; margin-top:0; padding:0.5rem 1rem;">Pay Online</a>
     </nav>
   </header>
 
