@@ -239,17 +239,21 @@ h2 {
 .testimonials {
   max-width: 900px;
   margin: 0 auto;
+  display: grid;
+  gap: 1.5rem;
 }
-.more-link { text-align: center; }
+.more-link { text-align: center; grid-column: 1 / -1; }
 .more-link a { color: var(--vi-1); text-decoration: underline; }
 blockquote {
   position: relative;
-  margin: 0 0 1.5rem;
-  padding: 1.25rem 1.5rem 1.25rem 2.75rem;
+  margin: 0;
+  padding: 1.5rem 1.75rem 1.5rem 3rem;
   background: var(--vi-1);
   border-left: 4px solid var(--vi-gold);
   font-style: italic;
   color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 blockquote::before {
   content: "\201C";
@@ -317,4 +321,15 @@ footer {
 footer a {
   color: #fff;
   text-decoration: underline;
+}
+.testimonial-intro {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+}
+
+@media (min-width: 768px) {
+  .testimonials {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
