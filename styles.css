@@ -22,6 +22,15 @@ body {
 .bg-gray  { background: var(--vi-gray); color: var(--vi-2); }
 .bg-midnight { background: var(--vi-2); color: #fff; }
 
+.bg-midnight a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.bg-midnight a:hover {
+  color: var(--vi-5);
+}
+
 .section-title {
   font-family: "Cinzel", serif;
   font-size: 2rem;
@@ -126,6 +135,18 @@ body {
 .hero-contact { background: var(--vi-3); }
 .hero-pay { background: var(--vi-1); }
 .hero-ready { background: var(--vi-2); }
+
+.hero.hero-about,
+.hero.hero-personal,
+.hero.hero-business,
+.hero.hero-testimonials,
+.hero.hero-faq,
+.hero.hero-contact,
+.hero.hero-pay,
+.hero.hero-ready {
+  height: 45vh;
+  min-height: 300px;
+}
 
 /* Section base */
 section { padding: 3rem 1.25rem; }
