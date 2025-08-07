@@ -9,78 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
-
-  <style>
-    :root {
-      --vi-1: #1B3940; /* Deep Teal */
-      --vi-2: #132326; /* Midnight */
-      --vi-gold: #BD9E07; /* accent line */
-      --vi-nav: #1C1F19; /* navigation bar */
-    }
-
-    body {
-      margin: 0;
-      font-family: "Open Sans", Arial, sans-serif;
-      color: var(--vi-2);
-      line-height: 1.6;
-      background: #fff;
-    }
-
-    .site-header {
-      background: var(--vi-nav);
-      color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0.75rem 1.25rem;
-      border-bottom: 1px solid var(--vi-gold);
-    }
-    .site-header nav a {
-      color: #fff;
-      text-decoration: none;
-      margin-left: 1rem;
-      font-weight: 600;
-    }
-    .site-header nav a:hover { text-decoration: underline; }
-    .site-header nav .dropdown { position: relative; display: inline-block; }
-    .site-header nav .dropdown-content {
-      display: none;
-      position: absolute;
-      background: var(--vi-nav);
-      padding: 0.5rem 0;
-      min-width: 200px;
-      z-index: 1;
-    }
-    .site-header nav .dropdown-content a {
-      color: #fff;
-      text-decoration: none;
-      display: block;
-      margin: 0;
-      padding: 0.5rem 1rem;
-    }
-    .site-header nav .dropdown:hover .dropdown-content { display: block; }
-    .logo-link img { height: 48px; width: auto; }
-
-    .btn {
-      display: inline-block;
-      background: var(--vi-1);
-      color: #fff;
-      padding: 0.75rem 1.5rem;
-      border-radius: 4px;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    section { padding: 3rem 1.25rem; text-align: center; }
-
-    footer {
-      background: var(--vi-nav);
-      color: #fff;
-      padding: 2rem 1.25rem;
-      font-size: 0.875rem;
-      text-align: center;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
