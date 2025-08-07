@@ -322,6 +322,35 @@ footer a {
   color: #fff;
   text-decoration: underline;
 }
+
+/* FAQ */
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.faq-list details {
+  border-bottom: 1px solid var(--vi-4);
+  padding: 1rem 0;
+}
+.faq-list details:last-of-type { border-bottom: none; }
+.faq-list summary {
+  font-family: "Merriweather", serif;
+  font-weight: 600;
+  color: var(--vi-1);
+  cursor: pointer;
+  position: relative;
+  padding-right: 1.5rem;
+}
+.faq-list summary::-webkit-details-marker { display: none; }
+.faq-list summary::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: var(--vi-gold);
+}
+.faq-list details[open] summary::after { content: "-"; }
+.faq-list p { margin: 0.5rem 0 0; }
 .testimonial-intro {
   text-align: center;
   max-width: 700px;
