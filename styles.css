@@ -118,6 +118,15 @@ body {
   line-height: 1.2;
 }
 
+.hero-about { background: var(--vi-1); }
+.hero-personal { background: var(--vi-2); }
+.hero-business { background: var(--vi-3); }
+.hero-testimonials { background: var(--vi-1); }
+.hero-faq { background: var(--vi-2); }
+.hero-contact { background: var(--vi-3); }
+.hero-pay { background: var(--vi-1); }
+.hero-ready { background: var(--vi-2); }
+
 /* Section base */
 section { padding: 3rem 1.25rem; }
 
