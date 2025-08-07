@@ -130,13 +130,32 @@
       max-width: 900px;
       margin: 0 auto;
     }
+    .more-link { text-align: center; }
+    .more-link a { color: var(--vi-1); text-decoration: underline; }
     blockquote {
+      position: relative;
       margin: 0 0 1.5rem;
-      padding: 1.25rem 1.5rem;
+      padding: 1.25rem 1.5rem 1.25rem 2.75rem;
       background: var(--vi-1);
       border-left: 4px solid var(--vi-gold);
       font-style: italic;
       color: #fff;
+    }
+    blockquote::before {
+      content: "\201C";
+      position: absolute;
+      left: 1rem;
+      top: 0.5rem;
+      font-size: 2rem;
+      color: var(--vi-gold);
+      font-family: "Merriweather", serif;
+    }
+    blockquote cite {
+      display: block;
+      margin-top: 0.75rem;
+      font-style: normal;
+      font-weight: 600;
+      color: var(--vi-5);
     }
 
     /* CTA */
@@ -188,7 +207,7 @@
     <nav>
       <a href="#services">Services</a>
       <a href="#why">Why Us</a>
-      <a href="#testimonials">Testimonials</a>
+      <a href="testimonials.html">Testimonials</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -247,9 +266,15 @@
   <section id="testimonials" class="bg-white">
     <h2>Client Testimonials</h2>
     <div class="testimonials">
-      <blockquote>“Robert Pohl was a lifesaver, guiding me through Chapter&nbsp;7 and wiping out $50,000 in debt. I can finally breathe again.” — C.M., St.&nbsp;Thomas</blockquote>
-      <blockquote>“Our small business reorganized under Subchapter&nbsp;V and is thriving today thanks to Robert’s expertise.” — L.T., Christiansted</blockquote>
-      <p style="text-align:center;"><a href="#" style="color:var(--vi-1); text-decoration:underline;">Read more testimonials</a></p>
+      <blockquote>
+        <p>Robert Pohl was a lifesaver, guiding me through Chapter&nbsp;7 and wiping out $50,000 in debt. I can finally breathe again.</p>
+        <cite>&mdash; C.M., St.&nbsp;Thomas</cite>
+      </blockquote>
+      <blockquote>
+        <p>Our small business reorganized under Subchapter&nbsp;V and is thriving today thanks to Robert’s expertise.</p>
+        <cite>&mdash; L.T., Christiansted</cite>
+      </blockquote>
+      <p class="more-link"><a href="testimonials.html">Read more testimonials</a></p>
     </div>
   </section>
 
