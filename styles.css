@@ -139,6 +139,36 @@ h2 {
   text-align: center;
 }
 
+/* About */
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.about-wrapper img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 8px;
+}
+.about-text { text-align: center; }
+.about-heading {
+  font-family: "Merriweather", serif;
+  font-size: 1.5rem;
+  color: var(--vi-1);
+  margin-top: 0;
+}
+@media (min-width: 768px) {
+  .about-wrapper {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .about-text { text-align: left; }
+}
+
 .services {
   display: grid;
   gap: 2rem;
