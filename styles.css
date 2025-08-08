@@ -386,6 +386,36 @@ h2 {
   }
 }
 
+.info-section {
+  max-width: 900px;
+  margin: 0 auto 2rem;
+  padding: 2rem 1.25rem;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.contact-card {
+  background: var(--vi-gray);
+  padding: 1rem 1.5rem;
+  border-left: 4px solid var(--vi-gold);
+  margin-bottom: 1rem;
+}
+
+.experience .job {
+  margin-bottom: 1.5rem;
+}
+
+.experience .job h4 {
+  margin: 0 0 0.5rem;
+  font-family: "Merriweather", serif;
+  color: var(--vi-1);
+}
+
+.experience .job p {
+  margin: 0.25rem 0;
+}
+
 /* Testimonials */
 .testimonials {
   max-width: 900px;
