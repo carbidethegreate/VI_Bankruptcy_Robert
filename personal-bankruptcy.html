@@ -3,13 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="images/favicon.png" type="image/png" />
+  <meta name="description" content="Guidance on Chapter 7 and Chapter 13 personal bankruptcy for Virgin Islands residents." />
+  <meta property="og:title" content="Personal Bankruptcy | VI Bankruptcy" />
+  <meta property="og:description" content="Guidance on Chapter 7 and Chapter 13 personal bankruptcy for Virgin Islands residents." />
+  <meta property="og:image" content="https://vibankruptcy.com/images/favicon.png" />
+  <meta property="og:url" content="https://vibankruptcy.com/personal-bankruptcy.html" />
+  <meta name="twitter:card" content="summary_large_image" />
     <title>Personal Bankruptcy | VI Bankruptcy</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -22,7 +29,8 @@
           alt="viBankruptcy logo"
         />
       </a>
-      <nav>
+    <button id="menu-toggle" class="btn">☰ Menu</button>
+    <nav>
         <a href="about.html">About</a>
         <div class="dropdown">
           <a href="javascript:void(0)">Services ▾</a>
@@ -163,5 +171,12 @@
       <a href="privacy-policy.html">Privacy Policy</a> ·
       <a href="disclaimer.html">Disclaimer</a>
     </footer>
-  </body>
+  
+<script>
+  document.getElementById('menu-toggle').onclick = function() {
+    document.querySelector('header nav').classList.toggle('open');
+  };
+</script>
+
+</body>
 </html>

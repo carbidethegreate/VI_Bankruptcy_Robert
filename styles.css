@@ -17,6 +17,16 @@ body {
   background: #fff;
 }
 
+a {
+  color: var(--vi-1);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--vi-2);
+}
+
 /* Background helpers */
 .bg-white {
   background: #fff;
@@ -41,7 +51,7 @@ body {
 }
 
 .section-title {
-  font-family: "Cinzel", serif;
+  font-family: "Merriweather", serif;
   font-size: 2rem;
   font-weight: 400;
   color: var(--vi-5);
@@ -108,12 +118,16 @@ body {
   justify-content: space-between;
   padding: 0.75rem 1.25rem;
   border-bottom: 1px solid var(--vi-gold);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .site-header nav a {
   color: #fff;
   text-decoration: none;
   margin-left: 1rem;
   font-weight: 600;
+  font-family: "Open Sans", Arial, sans-serif;
 }
 .site-header nav a:hover {
   text-decoration: underline;
@@ -157,7 +171,7 @@ body {
   padding: 0 1.25rem;
 }
 .hero h1 {
-  font-family: "Cinzel", serif;
+  font-family: "Merriweather", serif;
   font-size: clamp(1.75rem, 4vw + 0.5rem, 3rem);
   font-weight: 400;
   color: #c8b27f;
@@ -217,7 +231,17 @@ body {
 
 /* Section base */
 section {
-  padding: 3rem 1.25rem;
+  padding: 4rem 2rem;
+}
+
+section > * {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero {
+  padding: 0 1.25rem;
 }
 
 h2 {
@@ -392,6 +416,16 @@ blockquote cite {
   text-decoration: none;
   font-weight: 600;
   margin-top: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--vi-2);
+}
+
+#menu-toggle {
+  display: none;
 }
 
 /* Pay Online link adjustments */
@@ -433,10 +467,39 @@ footer {
   padding: 2rem 1.25rem;
   font-size: 0.875rem;
   text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 0 auto;
 }
 footer a {
   color: #fff;
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .site-header {
+    flex-wrap: wrap;
+  }
+  .site-header nav {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+  .site-header nav.open {
+    display: flex;
+  }
+  .site-header nav .dropdown:hover .dropdown-content {
+    display: none;
+  }
+  .site-header nav.open .dropdown-content {
+    display: block;
+    position: static;
+  }
+  #menu-toggle {
+    display: block;
+    margin-left: auto;
+  }
 }
 
 /* FAQ */
