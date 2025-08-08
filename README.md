@@ -65,7 +65,7 @@ Call to Action:
 Ready to get out of debt? <strong>Contact us today</strong> for a free, confidential consultation. [Contact Us Button]
 -------------------------------------------------------------------
 Footer: 
-Logo | Law Office of Robert Pohl, VI Bankruptcy  
+Logo | POHL BANKRUPTCY, LLC, VI Bankruptcy  
 St. Thomas: 5316 Yacht Haven Grande, Suite N-104 Box 30, St. Thomas, VI 00802  
 St. Croix: 4500 Sion Farm, Suite 1, Christiansted, VI 00820  
 Phone: 888-676-4598  |  Email: info@viBankruptcy.com  
@@ -530,7 +530,7 @@ Local icons – maybe a tiny icon of a palm tree or a lighthouse (the VI does h
 These icons will be in line with the color scheme (maybe in teal or navy) and not oversized. They should complement the text, not overpower it.
 All images will be optimized for web (compressed appropriately) to ensure they don’t slow the site down. We will use modern formats like WebP if possible, with fallbacks for older browsers, which Cloudflare can also help optimize. Additionally, we will include descriptive alt text for each image for accessibility (e.g., <img src="couple-relieved.jpg" alt="A relieved couple reviewing finances with a professional advisor">).
 Logo and Branding: The site currently likely uses just a text treatment (“Pohl Bankruptcy” etc.). We will create a simple logo for viBankruptcy.com. Options for the logo:
-A text-based logo that says “VI Bankruptcy” (with perhaps a small tagline like “Law Office of Robert Pohl” beneath it in smaller text). We can use the same serif font from headings or a complementary font for the logo to give it a slight distinction. “VI” might be stylized in the accent color and “Bankruptcy” in navy, for example.
+A text-based logo that says “VI Bankruptcy” (with perhaps a small tagline like “POHL BANKRUPTCY, LLC” beneath it in smaller text). We can use the same serif font from headings or a complementary font for the logo to give it a slight distinction. “VI” might be stylized in the accent color and “Bankruptcy” in navy, for example.
 Alongside the text, a minimal graphic element could be included: for instance, integrating the shape of the Virgin Islands or a justice scale. One concept: the outline of St. Thomas and St. Croix (the main islands) with a balanced scale overlay – but that might be too detailed for a small logo. Another concept: a simple icon of a lighthouse or anchor (symbolizing guidance and stability) paired with the text. Or even a wave graphic underlining the text (suggesting the sea/island).
 We’ll ensure the logo works on both light and dark backgrounds. Likely we’ll use a dark version (navy text on white) for the header (white background) and a light version (white text on navy) for the footer or anywhere on a dark background.
 A branding guide (style sheet) will document the exact colors (hex codes for the blues, etc.), the fonts chosen, and how to use the logo. For example, it will specify minimum padding around the logo, not stretching/distorting it, and the font sizes for headings and body in CSS to maintain consistency.
@@ -583,7 +583,7 @@ Call to Action:
 Ready to get out of debt? <strong>Contact us today</strong> for a free, confidential consultation. [Contact Us Button]
 -------------------------------------------------------------------
 Footer: 
-Logo | Law Office of Robert Pohl, VI Bankruptcy  
+Logo | POHL BANKRUPTCY, LLC, VI Bankruptcy  
 St. Thomas: 5316 Yacht Haven Grande, Suite N-104 Box 30, St. Thomas, VI 00802  
 St. Croix: 4500 Sion Farm, Suite 1, Christiansted, VI 00820  
 Phone: 888-676-4598  |  Email: info@viBankruptcy.com  
