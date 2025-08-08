@@ -154,9 +154,27 @@ a:hover {
 .site-header nav .dropdown:hover .dropdown-content {
   display: block;
 }
+.logo-link {
+  display: flex;
+  align-items: center;
+}
 .logo-link img {
-  height: 48px;
   width: auto;
+}
+.logo-text {
+  color: #fff;
+  margin-left: 0.5rem;
+  font-weight: 600;
+}
+@media (max-width: 768px) {
+  .logo-link img {
+    height: 48px;
+  }
+}
+@media (min-width: 768px) {
+  .logo-link img {
+    height: 60px;
+  }
 }
 
 /* Hero */
