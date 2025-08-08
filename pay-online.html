@@ -3,12 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="images/favicon.png" type="image/png" />
+  <meta name="description" content="Secure online payment portal for clients of the Law Office of Robert Pohl." />
+  <meta property="og:title" content="Pay Online | VI Bankruptcy" />
+  <meta property="og:description" content="Secure online payment portal for clients of the Law Office of Robert Pohl." />
+  <meta property="og:image" content="https://vibankruptcy.com/images/favicon.png" />
+  <meta property="og:url" content="https://vibankruptcy.com/pay-online.html" />
+  <meta name="twitter:card" content="summary_large_image" />
   <title>Pay Online | VI Bankruptcy</title>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -16,6 +23,7 @@
     <a href="index.html" class="logo-link">
       <img src="https://imagedelivery.net/MqlML99ManDWvfuYMb9PmQ/b0e1c617-ab4f-4cec-fcd3-069434816600/public" alt="viBankruptcy logo" />
     </a>
+    <button id="menu-toggle" class="btn">☰ Menu</button>
     <nav>
       <a href="about.html">About</a>
       <div class="dropdown">
@@ -51,5 +59,12 @@
   <footer>
     &copy; 2025 viBankruptcy.com · Law Office of Robert Pohl · <a href="pay-online.html">Pay Online</a> · <a href="privacy-policy.html">Privacy Policy</a> · <a href="disclaimer.html">Disclaimer</a>
   </footer>
+
+<script>
+  document.getElementById('menu-toggle').onclick = function() {
+    document.querySelector('header nav').classList.toggle('open');
+  };
+</script>
+
 </body>
 </html>
