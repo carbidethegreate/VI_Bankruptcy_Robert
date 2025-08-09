@@ -68,7 +68,7 @@ Footer:
 Logo | POHL BANKRUPTCY, LLC, VI Bankruptcy  
 St. Thomas: 5316 Yacht Haven Grande, Suite N-104 Box 30, St. Thomas, VI 00802  
 St. Croix: 4500 Sion Farm, Suite 1, Christiansted, VI 00820  
-Phone: 888-676-4598  |  Email: robert@pohlbankruptcy.com  
+Phone: 340-203-3333  |  Email: robert@pohlbankruptcy.com  
 [Social Icons]  
 Disclaimer: This website is for informational purposes ... (small text)
 
@@ -203,7 +203,7 @@ Contact Us (Title)
 Subtitle: We’re here to help – reach out today.
 ---------------------------
 [Left side (or top on mobile)]:  
-**Phone:** 888-676-4598  
+**Phone:** 340-203-3333  
 **Email:** robert@pohlbankruptcy.com  
 **Offices:**  
 • **St. Thomas:** 5316 Yacht Haven Grande, Suite N-104 Box 30, St. Thomas, VI 00802  
@@ -318,7 +318,7 @@ Overall, the Contact page should make it as easy as possible for someone to reac
 
 Contact Form: A simple form where users can send a message directly through the site. It will likely have fields for Name, Email, Phone, and a Message textarea (where they can briefly describe their situation or question). We will place a “Submit” button labeled with an inviting phrase like “Request Your Free Consultation” or “Get Help Now”. When the form is submitted, as discussed earlier, a Cloudflare Pages Function will handle it – sending the details via email to the firm’s inbox and possibly storing a copy in a secure location. We’ll ensure the form submission gives feedback (like a thank-you message that appears, saying “Thank you for contacting us. We will reach out to you within 24 hours.”) to reassure the user their message went through.
 
-Direct Contact Info: Not everyone likes forms, so we will prominently display the phone number and email address as well. For consistency and local presence, we’ll use the same phone and addresses from the existing site. The firm’s main phone (toll-free 888-676-4598) __________________ will be in large text, possibly with a “Tap to call” feature on mobile. 
+Direct Contact Info: Not everyone likes forms, so we will prominently display the phone number and email address as well. For consistency and local presence, we’ll use the same phone and addresses from the existing site. The firm’s main phone (toll-free 340-203-3333) __________________ will be in large text, possibly with a “Tap to call” feature on mobile. 
 
 We’ll also list an email (if one is used for public contact, e.g., something like robert@pohlbankruptcy.com or the existing one) and the physical office addresses:
 
@@ -586,7 +586,7 @@ Footer:
 Logo | POHL BANKRUPTCY, LLC, VI Bankruptcy  
 St. Thomas: 5316 Yacht Haven Grande, Suite N-104 Box 30, St. Thomas, VI 00802  
 St. Croix: 4500 Sion Farm, Suite 1, Christiansted, VI 00820  
-Phone: 888-676-4598  |  Email: robert@pohlbankruptcy.com  
+Phone: 340-203-3333  |  Email: robert@pohlbankruptcy.com  
 [Social Icons]  
 Disclaimer: This website is for informational purposes ... (small text)
 
@@ -721,7 +721,7 @@ Contact Us (Title)
 Subtitle: We’re here to help – reach out today.
 ---------------------------
 [Left side (or top on mobile)]:  
-**Phone:** 888-676-4598  
+**Phone:** 340-203-3333  
 **Email:** robert@pohlbankruptcy.com  
 **Offices:**  
 • **St. Thomas:** 5316 Yacht Haven Grande, Suite N-104 Box 30, St. Thomas, VI 00802  
