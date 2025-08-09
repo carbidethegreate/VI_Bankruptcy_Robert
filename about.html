@@ -138,6 +138,33 @@
           </div>
         </div>
       </section>
+      <!-- Desktop toolbar below hero -->
+      <div class="about-toolbar desktop-only" role="navigation" aria-label="About quick links">
+        <div class="about-toolbar__inner">
+          <!-- tiny ghosted logo -->
+          <img
+            class="toolbar-logo"
+            src="https://imagedelivery.net/MqlML99ManDWvfuYMb9PmQ/8dd67803-ace6-499b-f07e-3aa217afcf00/public"
+            alt=""
+            aria-hidden="true"
+            width="96"
+            height="54"
+            decoding="async"
+          />
+
+          <a href="contact.html" class="btn toolbar-cta">Free Consultation</a>
+
+          <nav id="about-subnav-desktop" class="chip-nav" aria-label="About section links">
+            <a class="subnav-chip" href="#about">About</a>
+            <a class="subnav-chip" href="#experience">Experience</a>
+            <a class="subnav-chip" href="#education">Education</a>
+            <a class="subnav-chip" href="#admissions">Admissions</a>
+            <a class="subnav-chip" href="#licenses">Licenses</a>
+            <a class="subnav-chip" href="#approach">Approach</a>
+            <a class="subnav-chip" href="#contact-info">Contact</a>
+          </nav>
+        </div>
+      </div>
       <!-- Mobile quick links, sticky -->
       <nav id="about-subnav" class="mobile-subnav" aria-label="Quick section links">
         <a class="subnav-chip" href="#about">About</a>
@@ -810,37 +837,44 @@
     </script>
 
     <script>
-      /* About: highlight active chip as sections enter view, keep chip centered */
+      /* About: highlight active chip across mobile and desktop chips */
       (function () {
-        const subnav = document.getElementById("about-subnav");
-        if (!subnav) return;
+        const containers = [
+          document.getElementById("about-subnav"),
+          document.getElementById("about-subnav-desktop"),
+        ].filter(Boolean);
 
-        const chips = Array.from(subnav.querySelectorAll("a.subnav-chip"));
-        const map = new Map(chips.map((a) => [a.getAttribute("href"), a]));
-        const sections = chips
-          .map((a) => document.querySelector(a.getAttribute("href")))
-          .filter(Boolean);
+        if (!containers.length) return;
+
+        const chipSets = containers.map((c) =>
+          Array.from(c.querySelectorAll("a.subnav-chip"))
+        );
+        const chips = chipSets.flat();
+        const map = new Map(
+          chips.map((a) => [
+            a.getAttribute("href"),
+            chips.filter((x) => x.getAttribute("href") === a.getAttribute("href")),
+          ])
+        );
+
+        const sections = [
+          ...new Set(
+            chips
+              .map((a) => document.querySelector(a.getAttribute("href")))
+              .filter(Boolean),
+          ),
+        ];
 
         function setActive(id) {
           chips.forEach((c) => c.removeAttribute("aria-current"));
-          const active = map.get(id);
-          if (active) {
-            active.setAttribute("aria-current", "page");
-            // keep the active chip in view on small screens
-            active.scrollIntoView({
-              behavior: "smooth",
-              inline: "center",
-              block: "nearest",
-            });
-          }
+          const group = map.get(id);
+          if (group) group.forEach((c) => c.setAttribute("aria-current", "page"));
         }
 
         const io = new IntersectionObserver(
           (entries) => {
             entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                setActive("#" + entry.target.id);
-              }
+              if (entry.isIntersecting) setActive("#" + entry.target.id);
             });
           },
           { root: null, rootMargin: "-45% 0px -45% 0px", threshold: 0.01 },
