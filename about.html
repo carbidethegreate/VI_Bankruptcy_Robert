@@ -85,27 +85,47 @@
     </div>
   </section>
 
-  <section class="bg-white" id="about">
+  <section class="bg-white pattern-bg" id="about">
     <h2 class="section-title">About Us</h2>
     <div class="about-wrapper">
       <img class="about-photo" src="https://imagedelivery.net/MqlML99ManDWvfuYMb9PmQ/1ab4fdc6-aa8f-4845-1760-5d6bdbd1e300/public" alt="Pencil drawing of attorney Robert A. Pohl" width="1024" height="1024" />
       <div class="about-text">
-        <h3 class="about-heading">Robert A. Pohl – Bankruptcy Attorney</h3>
-        <p>Robert A. Pohl is a seasoned bankruptcy attorney holding a J.D., LL.M. in Tax, and an MBA. Admitted in the U.S. Virgin Islands and multiple states, he has spent more than 25&nbsp;years helping individuals and businesses overcome debt.</p>
-        <p>Each client is unique, and each situation is unique. The difference between good and amazing service is not only addressing the common problems but tailoring solutions to attend to each detail that is unique. I believe in taking the time to get to know each client and making sure that they are well taken care of.</p>
+        <h3 class="about-heading"><span class="name-highlight">Robert A. Pohl</span> – Bankruptcy Attorney</h3>
+        <div class="personal-statement">
+          <p>Robert A. Pohl is a seasoned bankruptcy attorney holding a J.D., LL.M. in Tax, and an MBA. Admitted in the U.S. Virgin Islands and multiple states, he has spent more than 25&nbsp;years helping individuals and businesses overcome debt.</p>
+          <p class="more-text">Each client is unique, and each situation is unique. The difference between good and amazing service is not only addressing the common problems but tailoring solutions to attend to each detail that is unique. I believe in taking the time to get to know each client and making sure that they are well taken care of.</p>
+          <button class="read-more" aria-expanded="false">Read more</button>
+        </div>
+        <blockquote class="pull-quote">Financial freedom starts with honest advice and tailored strategy.</blockquote>
+        <ul class="styled-list accomplishments">
+          <li>25+ years guiding clients through bankruptcy</li>
+          <li>Admitted in the U.S. Virgin Islands and multiple states</li>
+          <li>Advanced degrees in Law, Taxation and Business</li>
+        </ul>
       </div>
-  </div>
+    </div>
   </section>
   <section class="bg-white">
     <div class="info-section" id="contact-info">
       <h2 class="section-title">Contact</h2>
       <div class="contact-card">
-        <p><strong>U.S. Virgin Islands Offices</strong><br />
-        St. Thomas: 5316 Yacht Haven Grande, Suite N‑104, Box 30, St. Thomas, VI 00802<br />
-        St. John: 5000 Estate Enighed, P.O. Box 343, St. John, VI 00830<br />
-        St. Croix: 6002 Diamond Ruby, Suite 3, PMB 633, Christiansted, VI 00820</p>
-        <p>Phone: Office (340) 203‑3333 • Mobile (864) 361‑4827<br />
-        Email: <a href="mailto:Robert@POHLPA.com">Robert@POHLPA.com</a></p>
+        <p><strong>U.S. Virgin Islands Offices</strong></p>
+        <div class="contact-columns">
+          <div class="office">
+            <h4>St. Thomas</h4>
+            <p>5316 Yacht Haven Grande, Suite N‑104, Box 30<br />St. Thomas, VI 00802</p>
+          </div>
+          <div class="office">
+            <h4>St. John</h4>
+            <p>5000 Estate Enighed, P.O. Box 343<br />St. John, VI 00830</p>
+          </div>
+          <div class="office">
+            <h4>St. Croix</h4>
+            <p>6002 Diamond Ruby, Suite 3, PMB 633<br />Christiansted, VI 00820</p>
+          </div>
+        </div>
+        <p class="contact-phones"><span class="icon" aria-hidden="true">📞</span> Office (340) 203‑3333 • Mobile (864) 361‑4827</p>
+        <p class="contact-email"><span class="icon" aria-hidden="true">✉️</span> <a href="mailto:Robert@POHLPA.com">Robert@POHLPA.com</a></p>
       </div>
     </div>
 
@@ -286,6 +306,33 @@
       nav.classList.remove('open');
       menuToggle.setAttribute('aria-expanded', 'false');
     });
+  });
+
+  // Read more toggle
+  const readMoreBtn = document.querySelector('.read-more');
+  const moreText = document.querySelector('.more-text');
+  if (readMoreBtn && moreText) {
+    readMoreBtn.addEventListener('click', () => {
+      const expanded = readMoreBtn.getAttribute('aria-expanded') === 'true';
+      readMoreBtn.setAttribute('aria-expanded', (!expanded).toString());
+      moreText.classList.toggle('open');
+      readMoreBtn.textContent = expanded ? 'Read more' : 'Read less';
+    });
+  }
+
+  // Animate lists on scroll
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.styled-list li').forEach(item => {
+    item.classList.add('fade-in');
+    observer.observe(item);
   });
 </script>
 

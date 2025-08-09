@@ -334,41 +334,6 @@ h2 {
   text-align: center;
 }
 
-/* About */
-.about-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-.about-wrapper img {
-  width: 100%;
-  margin: 0;
-  max-width: 320px;
-  border-radius: 8px;
-}
-.about-text {
-  text-align: center;
-}
-.about-heading {
-  font-family: "Merriweather", serif;
-  font-size: 1.5rem;
-  color: var(--vi-1);
-  margin-top: 0;
-}
-@media (min-width: 768px) {
-  .about-wrapper {
-    flex-direction: row;
-    align-items: flex-start;
-    text-align: left;
-  }
-  .about-text {
-    text-align: left;
-  }
-}
-
 .services {
   display: grid;
   gap: 2rem;
@@ -400,8 +365,8 @@ h2 {
 
 /* About */
 .about-wrapper {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   align-items: center;
   gap: 2rem;
   max-width: 1100px;
@@ -412,7 +377,8 @@ h2 {
   height: auto;
   margin: 0;
   max-width: 240px;
-  border-radius: 6px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .about-text {
   text-align: left;
@@ -423,13 +389,69 @@ h2 {
   color: var(--vi-1);
   margin-top: 0;
 }
+.name-highlight {
+  font-weight: 700;
+}
 @media (min-width: 768px) {
   .about-wrapper {
-    flex-direction: row;
-    align-items: flex-start;
+    grid-template-columns: 240px 1fr;
   }
-  .about-text {
-    flex: 1;
+}
+
+.personal-statement .more-text {
+  display: none;
+}
+.personal-statement .more-text.open {
+  display: block;
+}
+.read-more {
+  background: none;
+  border: none;
+  color: var(--vi-1);
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+  font: inherit;
+}
+.pull-quote {
+  margin: 1rem 0;
+}
+.accomplishments {
+  margin-top: 1rem;
+}
+.pattern-bg {
+  background-image: repeating-linear-gradient(45deg, var(--vi-gray) 0 10px, var(--vi-5) 10px 20px);
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.fade-in.in-view {
+  opacity: 1;
+  transform: none;
+}
+.contact-columns {
+  display: grid;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.contact-card h4 {
+  margin: 0 0 0.25rem;
+  font-family: "Merriweather", serif;
+  color: var(--vi-1);
+  font-size: 1rem;
+}
+.icon {
+  margin-right: 0.25rem;
+}
+.contact-phones,
+.contact-email {
+  margin: 0.5rem 0 0;
+}
+@media (min-width: 600px) {
+  .contact-columns {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
