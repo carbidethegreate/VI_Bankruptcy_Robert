@@ -684,7 +684,7 @@ footer a {
 .hero-actions {margin-top:1rem;display:flex;gap:.5rem;flex-wrap:wrap;}
 
 .attorney-card {display:grid;grid-template-columns:100px 1fr;gap:1rem;align-items:center;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);padding:1rem;border-radius:8px;max-width:900px;margin:1rem 0;}
-.attorney-card img {width:100px;height:100px;object-fit:cover;border-radius:8px;}
+.attorney-card img {width:100%;height:auto;border-radius:8px;}
 .attorney-card__content h3 {margin:0 0 .5rem;}
 
 .compliance-note {max-width:1100px;margin:1rem auto 0;padding:0 1.25rem;color:var(--vi-5);font-size:.875rem;}
