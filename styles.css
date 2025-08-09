@@ -89,6 +89,9 @@ a:hover {
 .form-submit {
   display: block;
   width: 100%;
+  margin: 0;
+  margin: 0;
+  margin: 0;
   margin-top: 1rem;
 }
 
@@ -104,6 +107,7 @@ a:hover {
 }
 .map iframe {
   width: 100%;
+  margin: 0;
   border: 0;
   height: 250px;
   border-radius: 4px;
@@ -120,6 +124,9 @@ a:hover {
   border-bottom: 1px solid var(--vi-gold);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   width: 100%;
+  margin: 0;
+  margin: 0;
+  margin: 0;
 }
 .site-header nav a {
   color: #fff;
@@ -289,6 +296,7 @@ h2 {
 }
 .about-wrapper img {
   width: 100%;
+  margin: 0;
   max-width: 320px;
   border-radius: 8px;
 }
@@ -363,6 +371,7 @@ h2 {
 }
 .about-photo {
   width: 100%;
+  margin: 0;
   max-width: 240px;
   border-radius: 6px;
 }
@@ -503,6 +512,7 @@ blockquote cite {
 .contact-grid input,
 .contact-grid textarea {
   width: 100%;
+  margin: 0;
   padding: 0.5rem;
   border: 1px solid var(--vi-4);
   border-radius: 4px;
@@ -520,8 +530,8 @@ footer {
   font-size: 0.875rem;
   text-align: center;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
 }
 footer a {
   color: #fff;
@@ -537,6 +547,7 @@ footer a {
     flex-direction: column;
     text-align: center;
     width: 100%;
+  margin: 0;
   }
   .site-header nav.open {
     display: flex;
