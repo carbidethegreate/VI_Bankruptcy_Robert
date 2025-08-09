@@ -857,7 +857,7 @@ footer a {
 
 .mobile-hero-links {
   display: none;
-  background: #333;
+  background: var(--vi-nav);
   padding: 1rem;
   color: #fff;
 }
@@ -870,15 +870,16 @@ footer a {
   text-decoration: underline;
   width: 100%;
   text-align: center;
+  display: block;
 }
 @media (max-width: 767px) {
   .mobile-hero-links {
     display: block;
   }
   .mobile-hero-links .hero-links {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 0.5rem;
-    align-items: center;
   }
 }
 
