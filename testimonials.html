@@ -38,9 +38,9 @@
         <img src="https://imagedelivery.net/MqlML99ManDWvfuYMb9PmQ/b0e1c617-ab4f-4cec-fcd3-069434816600/public" alt="VI Bankruptcy icon" />
         <span class="logo-text">Pohl Bankruptcy</span>
       </a>
-    <button id="menu-toggle" class="btn">☰ Menu</button>
+    <button id="menu-toggle" class="btn" aria-expanded="false">☰ Menu</button>
     <nav>
-      <a href="about.html">About</a>
+      <a href="about.html" data-icon="ℹ️">About</a>
       <div class="dropdown">
         <a href="index.html#services">Services ▾</a>
         <div class="dropdown-content">
@@ -48,10 +48,12 @@
           <a href="business-bankruptcy.html">Business Bankruptcy</a>
         </div>
       </div>
-      <a href="testimonials.html">Testimonials</a>
-      <a href="faq.html">FAQ</a>
-      <a href="contact.html">Contact</a>
-      <a href="pay-online.html" class="btn header-pay-link">Pay Online</a>
+      <a href="personal-bankruptcy.html" class="mobile-only" data-icon="👤">Personal Bankruptcy</a>
+      <a href="business-bankruptcy.html" class="mobile-only" data-icon="💼">Business Bankruptcy</a>
+      <a href="testimonials.html" data-icon="💬">Testimonials</a>
+      <a href="faq.html" data-icon="❓">FAQ</a>
+      <a href="contact.html" data-icon="✉️">Contact</a>
+      <a href="pay-online.html" class="btn header-pay-link" data-icon="💳">Pay Online</a>
     </nav>
   </header>
 
@@ -100,9 +102,18 @@
   </footer>
 
 <script>
-  document.getElementById('menu-toggle').onclick = function() {
-    document.querySelector('header nav').classList.toggle('open');
-  };
+  const menuToggle = document.getElementById('menu-toggle');
+  const nav = document.querySelector('header nav');
+  menuToggle.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded', open);
+  });
+  nav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
 </script>
 
 </body>
