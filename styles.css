@@ -1,3 +1,8 @@
+/* Ensure padding and borders are included in element width */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 :root {
   --vi-1: #1b3940; /* Deep Teal */
   --vi-2: #132326; /* Midnight */
