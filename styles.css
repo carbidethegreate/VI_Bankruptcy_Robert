@@ -136,7 +136,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.75rem 1.25rem;
+  padding: 0.75rem 2rem;
   border-bottom: 1px solid var(--vi-gold);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   width: 100%;
@@ -153,6 +153,9 @@ a:hover {
 }
 .site-header nav a:hover {
   text-decoration: underline;
+}
+.site-header .header-pay-link {
+  margin-right: 0.5rem;
 }
 .site-header nav .dropdown {
   position: relative;
@@ -553,7 +556,7 @@ footer a {
     flex-direction: column;
     text-align: center;
     width: 100%;
-  margin: 0;
+    margin: 0;
   }
   .site-header nav.open {
     display: flex;
