@@ -1120,7 +1120,7 @@ a.back-to-top {
 /* ===== Contact band, full-width teal ===== */
 .contact-band{
   position: relative;
-  padding: 0;
+  padding: clamp(1.5rem, 4vw, 3rem) 0;
   isolation: isolate;
 }
 .contact-band::before{
