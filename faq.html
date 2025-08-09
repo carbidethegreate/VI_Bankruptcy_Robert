@@ -48,12 +48,16 @@
           <a href="business-bankruptcy.html">Business Bankruptcy</a>
         </div>
       </div>
+      <a href="index.html" class="mobile-only" data-icon="🏠">Home</a>
       <a href="personal-bankruptcy.html" class="mobile-only" data-icon="👤">Personal Bankruptcy</a>
       <a href="business-bankruptcy.html" class="mobile-only" data-icon="💼">Business Bankruptcy</a>
+      <a href="tel:+13402033333" class="mobile-only" data-icon="📞">Call Now</a>
+      <a href="#" class="mobile-only add-contact" data-icon="📇">Add Pohl Bankruptcy to My Contacts</a>
       <a href="testimonials.html" data-icon="💬">Testimonials</a>
       <a href="faq.html" data-icon="❓">FAQ</a>
       <a href="contact.html" data-icon="✉️">Contact</a>
       <a href="pay-online.html" class="btn header-pay-link" data-icon="💳">Pay Online</a>
+      <a href="#" class="mobile-only close-nav" data-icon="❌">Close</a>
     </nav>
   </header>
 
@@ -113,7 +117,23 @@
     menuToggle.setAttribute('aria-expanded', open);
   });
   nav.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
+    link.addEventListener('click', (e) => {
+      if (link.classList.contains('add-contact')) {
+        e.preventDefault();
+        const vCard = `BEGIN:VCARD\nVERSION:3.0\nFN:Pohl Bankruptcy\nORG:Pohl Bankruptcy, LLC\nTEL;TYPE=work,voice:+1-340-203-3333\nEMAIL:robert@pohlbankruptcy.com\nEND:VCARD`;
+        const blob = new Blob([vCard], { type: 'text/vcard' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'pohl-bankruptcy.vcf';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+      }
+      if (link.classList.contains('close-nav')) {
+        e.preventDefault();
+      }
       nav.classList.remove('open');
       menuToggle.setAttribute('aria-expanded', 'false');
     });
