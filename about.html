@@ -767,6 +767,13 @@
         link.addEventListener("click", triggerVCard);
       });
 
+      // Close accordions on mobile
+      if (window.matchMedia("(max-width: 768px)").matches) {
+        document.querySelectorAll("details[open]").forEach((d) => {
+          d.open = false;
+        });
+      }
+
       // Read more toggle
       const readMoreBtn = document.querySelector(".read-more");
       const moreText = document.querySelector(".more-text");
