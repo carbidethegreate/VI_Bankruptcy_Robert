@@ -419,9 +419,6 @@ h2 {
 .accomplishments {
   margin-top: 1rem;
 }
-.pattern-bg {
-  background-image: repeating-linear-gradient(45deg, var(--vi-gray) 0 10px, var(--vi-5) 10px 20px);
-}
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
@@ -463,7 +460,6 @@ h2 {
 
 .cotton-paper {
   background-color: #fdfcf9;
-  background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
   border: 1px solid #e5e2d6;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
