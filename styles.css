@@ -371,6 +371,7 @@ h2 {
 }
 .about-photo {
   width: 100%;
+  height: auto;
   margin: 0;
   max-width: 240px;
   border-radius: 6px;
