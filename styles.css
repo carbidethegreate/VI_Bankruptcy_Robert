@@ -857,16 +857,28 @@ footer a {
 
 .mobile-hero-links {
   display: none;
-  background: var(--vi-gray);
-  padding: 1rem 0;
+  background: #333;
+  padding: 1rem;
+  color: #fff;
 }
 .mobile-hero-links .hero-actions,
 .mobile-hero-links .hero-links {
   justify-content: center;
 }
+.mobile-hero-links .hero-links a {
+  color: #fff;
+  text-decoration: underline;
+  width: 100%;
+  text-align: center;
+}
 @media (max-width: 767px) {
   .mobile-hero-links {
     display: block;
+  }
+  .mobile-hero-links .hero-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
   }
 }
 
