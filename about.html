@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon and App Icons -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -112,7 +113,9 @@
         <a href="#" class="mobile-only close-nav">Close</a>
       </nav>
     </header>
+
     <main id="main">
+      <!-- Hero Section -->
       <section class="hero hero-about">
         <div class="hero-content">
           <h1>About Us</h1>
@@ -123,25 +126,16 @@
             Robert Pohl has helped residents regain financial freedom for over
             25 years.
           </p>
-          <div class="hero-actions desktop-only">
-            <a href="#about" class="btn">Meet Robert</a>
-            <a href="contact.html" class="btn btn-secondary">Contact</a>
-          </div>
-          <div class="hero-links desktop-only">
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#education">Education</a>
-            <a href="#admissions">Admissions</a>
-            <a href="#licenses">Licenses</a>
-            <a href="#approach">Approach</a>
-            <a href="#contact-info">Contact</a>
-          </div>
         </div>
       </section>
-      <!-- Desktop toolbar below hero -->
-      <div class="about-toolbar desktop-only" role="navigation" aria-label="About quick links">
+
+      <!-- Sticky Desktop Toolbar with Quick Links -->
+      <div
+        class="about-toolbar desktop-only"
+        role="navigation"
+        aria-label="About quick links"
+      >
         <div class="about-toolbar__inner">
-          <!-- tiny ghosted logo -->
           <img
             class="toolbar-logo"
             src="https://imagedelivery.net/MqlML99ManDWvfuYMb9PmQ/8dd67803-ace6-499b-f07e-3aa217afcf00/public"
@@ -149,12 +143,13 @@
             aria-hidden="true"
             width="96"
             height="54"
-            decoding="async"
           />
-
           <a href="contact.html" class="btn toolbar-cta">Free Consultation</a>
-
-          <nav id="about-subnav-desktop" class="chip-nav" aria-label="About section links">
+          <nav
+            id="about-subnav-desktop"
+            class="chip-nav"
+            aria-label="About section links"
+          >
             <a class="subnav-chip" href="#about">About</a>
             <a class="subnav-chip" href="#experience">Experience</a>
             <a class="subnav-chip" href="#education">Education</a>
@@ -165,8 +160,13 @@
           </nav>
         </div>
       </div>
-      <!-- Mobile quick links, sticky -->
-      <nav id="about-subnav" class="mobile-subnav" aria-label="Quick section links">
+
+      <!-- Sticky Mobile Quick Links -->
+      <nav
+        id="about-subnav"
+        class="mobile-subnav"
+        aria-label="Quick section links"
+      >
         <a class="subnav-chip" href="#about">About</a>
         <a class="subnav-chip" href="#experience">Experience</a>
         <a class="subnav-chip" href="#education">Education</a>
@@ -176,8 +176,9 @@
         <a class="subnav-chip" href="#contact-info">Contact</a>
       </nav>
 
+      <!-- About Intro Section -->
       <section class="bg-white" id="about">
-        <h2 class="section-title section-title-left">Meet Attorney Pohl</h2>
+        <h2 class="section-title-left">Meet Attorney Pohl</h2>
         <div class="about-wrapper">
           <img
             class="about-photo"
@@ -221,60 +222,70 @@
           </div>
         </div>
       </section>
+
+      <!-- Contact Info / Contact Card Section -->
       <section class="bg-white">
-        <!-- Contact, full-width teal band -->
-        <div class="info-section contact-section contact-band" id="contact-info">
+        <div
+          class="info-section contact-section contact-band"
+          id="contact-info"
+        >
           <div class="contact-card contact-card--modern">
             <div class="contact-card__head">
               <h2 class="section-title section-title-left">Contact</h2>
-              <p class="contact-subtitle">Proudly Serving Clients in the Virgin Islands</p>
+              <p class="contact-subtitle">
+                Proudly Serving Clients in the Virgin Islands
+              </p>
             </div>
-
             <div class="contact-card__grid">
-              <!-- Offices with accordions -->
+              <!-- Offices (accordion list) -->
               <div class="contact-block">
                 <div class="eyebrow">Offices</div>
-
                 <details class="office-details" open>
                   <summary>St. Thomas</summary>
                   <p>
-                    5316 Yacht Haven Grande, Suite N-104, Box 30<br />
-                    St. Thomas, VI 00802
+                    5316 Yacht Haven Grande, Suite N-104, Box 30<br />St.
+                    Thomas, VI 00802
                   </p>
                 </details>
-
                 <details class="office-details">
                   <summary>St. John</summary>
                   <p>
-                    5000 Estate Enighed, P.O. Box 343<br />
-                    St. John, VI 00830
+                    5000 Estate Enighed, P.O. Box 343<br />St. John, VI 00830
                   </p>
                 </details>
-
                 <details class="office-details">
                   <summary>St. Croix</summary>
                   <p>
-                    6002 Diamond Ruby, Suite 3, PMB 633<br />
-                    Christiansted, VI 00820
+                    6002 Diamond Ruby, Suite 3, PMB 633<br />Christiansted, VI
+                    00820
                   </p>
                 </details>
               </div>
-
               <!-- Contact methods -->
               <div class="contact-block">
                 <div class="eyebrow">Get in touch</div>
                 <ul class="contact-list">
-                  <li><span>Office</span> <a href="tel:+13402033333">(340) 203-3333</a></li>
-                  <li><span>Mobile</span> <a href="tel:+18643614827">(864) 361-4827</a></li>
-                  <li><span>Email</span> <a href="mailto:Robert@POHLPA.com">Robert@POHLPA.com</a></li>
+                  <li>
+                    <span>Office</span>
+                    <a href="tel:+13402033333">(340) 203-3333</a>
+                  </li>
+                  <li>
+                    <span>Mobile</span>
+                    <a href="tel:+18643614827">(864) 361-4827</a>
+                  </li>
+                  <li>
+                    <span>Email</span>
+                    <a href="mailto:Robert@POHLPA.com">Robert@POHLPA.com</a>
+                  </li>
                 </ul>
                 <div class="contact-actions">
-                  <a href="contact.html" class="btn">Request Free Consultation</a>
+                  <a href="contact.html" class="btn"
+                    >Request Free Consultation</a
+                  >
                   <a href="#" class="download-vcard">Download vCard</a>
                 </div>
               </div>
             </div>
-
             <!-- Decorative bird watermark -->
             <img
               class="contact-card__bird"
@@ -289,7 +300,7 @@
         </div>
 
         <div class="info-section bg-white" id="summary">
-          <h2 class="section-title section-title-left">Professional Summary</h2>
+          <h2 class="section-title-left">Professional Summary</h2>
           <div class="summary-content">
             <div class="summary-main">
               <h3 class="about-heading">Overview</h3>
@@ -331,391 +342,381 @@
             </aside>
           </div>
         </div>
+      </section>
 
-        <section class="bg-gray experience-wrapper" id="experience">
-          <h2 class="section-title section-title-left">Legal Experience</h2>
-          <hr class="section-divider full-width" aria-hidden="true" />
-          <div class="info-section cotton-paper">
-            <div class="timeline">
-              <details class="timeline-item" open>
-                <summary>
-                  <span class="company">POHL, P.A.</span> – President
-                  <span class="dates">2012–Present</span>
-                </summary>
-                <p>
-                  Established a boutique law firm specializing in financial
-                  litigation including distressed debt purchases, hard money
-                  lending, bankruptcy, tax litigation and planning, estate
-                  planning, securities offerings and corporate services for
-                  small to mid‑sized clients.
-                </p>
-                <p>
-                  Developed a fully integrated and paperless practice managing
-                  749 clients and generating over $1MM in annual fees as a sole
-                  practitioner using automated systems and customized software.
-                </p>
-                <ul class="styled-list skills">
-                  <li>Financial litigation</li>
-                  <li>Practice automation</li>
-                </ul>
-              </details>
-
-              <details class="timeline-item" open>
-                <summary>
-                  <span class="company">POHL Bankruptcy, LLC</span> – Manager
-                  <span class="dates">2021–Present</span>
-                </summary>
-                <p>
-                  Established a bankruptcy firm focused on representing debtors
-                  in filings, litigation and related matters.
-                </p>
-                <ul class="styled-list skills">
-                  <li>Debtor advocacy</li>
-                  <li>Bankruptcy litigation</li>
-                </ul>
-              </details>
-
-              <details class="timeline-item" open>
-                <summary>
-                  <span class="company"
-                    >POHL Capital, LLC (dba POHL Realty)</span
-                  >
-                  – Manager <span class="dates">201?–Present</span>
-                </summary>
-                <p>
-                  Founded a real estate brokerage specializing in listing,
-                  marketing and selling distressed residential and commercial
-                  property.
-                </p>
-                <ul class="styled-list skills">
-                  <li>Distressed property sales</li>
-                  <li>Brokerage management</li>
-                </ul>
-              </details>
-
-              <details class="timeline-item" open>
-                <summary>
-                  <span class="company">POHL Title Company, LLC</span> – Manager
-                  &amp; Sole Member <span class="dates">2012–Present</span>
-                </summary>
-                <p>
-                  Manage a title insurance agency licensed with First American
-                  Title Insurance Company within South Carolina.
-                </p>
-                <ul class="styled-list skills">
-                  <li>Title insurance</li>
-                  <li>Agency management</li>
-                </ul>
-              </details>
-
-              <details class="timeline-item" open>
-                <summary>
-                  <span class="company">POHL Talent Management, LLC</span> –
-                  Manager <span class="dates">2018–Present</span>
-                </summary>
-                <p>
-                  Established a talent agency representing musicians, writers,
-                  actors, athletes and other performers.
-                </p>
-                <ul class="styled-list skills">
-                  <li>Talent representation</li>
-                  <li>Contract negotiation</li>
-                </ul>
-              </details>
-
-              <details class="timeline-item" open>
-                <summary>
-                  <span class="company">POHL Property Management, LLC</span> –
-                  Manager &amp; Sole Member <span class="dates">2012–2013</span>
-                </summary>
-                <p>
-                  Managed and sold a property management business overseeing
-                  residential and commercial properties including investment
-                  homes, a bar, a restaurant and a hotel.
-                </p>
-                <ul class="styled-list skills">
-                  <li>Property management</li>
-                  <li>Asset disposition</li>
-                </ul>
-              </details>
-
-              <details class="timeline-item" open>
-                <summary>
-                  <span class="company">Stodghill Law Firm Chartered</span> –
-                  Associate <span class="dates">2011–2012</span>
-                </summary>
-                <p>
-                  Performed duties similar to a corporate bankruptcy associate,
-                  supporting complex restructuring matters.
-                </p>
-                <ul class="styled-list skills">
-                  <li>Corporate bankruptcy</li>
-                  <li>Client counseling</li>
-                </ul>
-              </details>
-
-              <details class="timeline-item" open>
-                <summary>
-                  <span class="company">The Cooper Law Firm</span> – Corporate
-                  Bankruptcy Associate <span class="dates">2010–2011</span>
-                </summary>
-                <p>
-                  Interviewed, negotiated and managed individuals and businesses
-                  in restructuring debt and monetizing assets through financing,
-                  liability restructuring and bankruptcy filings.
-                </p>
-                <p>
-                  Drafted and argued adversarial proceedings, motions,
-                  applications and plans before the U.S. Bankruptcy Court.
-                </p>
-                <ul class="styled-list skills">
-                  <li>Adversarial litigation</li>
-                  <li>Restructuring strategy</li>
-                </ul>
-              </details>
-
-              <details class="timeline-item" open>
-                <summary>
-                  <span class="company">Resurgent Capital Services, LP</span> –
-                  Manager, Legal Services Compliance
-                  <span class="dates">2009–2010</span>
-                </summary>
-                <p>
-                  Analyzed distressed asset portfolios ranging from $2MM–$500MM
-                  and developed litigation and liquidation plans to maximize
-                  recovery.
-                </p>
-                <p>
-                  Managed bankruptcy litigation, foreclosure and international
-                  mortgage servicing departments overseeing secured accounts
-                  across North America and the Caribbean.
-                </p>
-                <ul class="styled-list skills">
-                  <li>Distressed asset recovery</li>
-                  <li>Portfolio management</li>
-                </ul>
-              </details>
-
-              <details class="timeline-item" open>
-                <summary>
-                  <span class="company"
-                    >Fell, Marking, Abkin, Montgomery, Granet &amp; Raney,
-                    LLP</span
-                  >
-                  – Associate <span class="dates">2008–2009</span>
-                </summary>
-                <p>
-                  Produced formation documents, licensing applications and
-                  related materials to establish and finance businesses.
-                </p>
-                <p>
-                  Drafted legal memos, briefs, opinions and research related to
-                  taxes, liability, insurance, real property and land use.
-                </p>
-                <ul class="styled-list skills">
-                  <li>Business formation</li>
-                  <li>Legal research</li>
-                </ul>
-              </details>
-
-              <details class="timeline-item" open>
-                <summary>
-                  <span class="company">Quality Loans, LLC</span> – General
-                  Counsel, Executive Managing Director
-                  <span class="dates">2007–2008</span>
-                </summary>
-                <p>
-                  Formed a Delaware LLC to acquire, sell, securitize and trade
-                  mortgage loans and similar instruments.
-                </p>
-                <p>
-                  Negotiated leases and agreements, arranged capital and oversaw
-                  licensing to originate, sell and securitize financial
-                  instruments.
-                </p>
-                <ul class="styled-list skills">
-                  <li>Securitization</li>
-                  <li>Capital raising</li>
-                </ul>
-              </details>
-
-              <details class="timeline-item" open>
-                <summary>
-                  <span class="company">Quality Home Loans</span> – General
-                  Counsel, Executive Managing Director
-                  <span class="dates">2006–2007</span>
-                </summary>
-                <p>
-                  Managed legal, correspondent and capital‑markets divisions
-                  completing ~$1B in mortgage originations and securities
-                  annually.
-                </p>
-                <p>
-                  Raised $60MM in private equity and $50MM in commercial paper
-                  while establishing $300MM in credit facilities.
-                </p>
-                <ul class="styled-list skills">
-                  <li>Mortgage finance</li>
-                  <li>Compliance management</li>
-                </ul>
-              </details>
-
-              <details class="timeline-item" open>
-                <summary>
-                  <span class="company">Countrywide Home Loans, Inc.</span> –
-                  First Vice President, Senior Legal Counsel
-                  <span class="dates">2002–2006</span>
-                </summary>
-                <p>
-                  Managed teams purchasing, selling and securitizing
-                  approximately $9B per month of mortgage loans.
-                </p>
-                <p>
-                  Drafted and negotiated agreements, advised on underwriting and
-                  servicing issues and developed compliance procedures.
-                </p>
-                <ul class="styled-list skills">
-                  <li>Mortgage securitization</li>
-                  <li>Regulatory compliance</li>
-                </ul>
-              </details>
-
-              <details class="timeline-item" open>
-                <summary>
-                  <span class="company"
-                    >California Association of REALTORS&reg;, Inc.</span
-                  >
-                  – Corporate Attorney <span class="dates">2001–2002</span>
-                </summary>
-                <p>
-                  Prepared formation documents, acquired venture capital and
-                  advised officers and directors across nine entities.
-                </p>
-                <p>
-                  Handled acquisitions, IP matters, contract negotiations and
-                  compliance for campaign and political laws.
-                </p>
-                <ul class="styled-list skills">
-                  <li>Corporate governance</li>
-                  <li>Intellectual property</li>
-                </ul>
-              </details>
-
-              <details class="timeline-item" open>
-                <summary>
-                  <span class="company">KPMG, LLP</span> – Senior Tax Specialist
-                  <span class="dates">2000–2001</span>
-                </summary>
-                <p>
-                  Interpreted state tax and corporate codes to devise plans
-                  decreasing taxes by over 80%.
-                </p>
-                <p>
-                  Implemented tax‑minimization strategies and secured a $20MM
-                  refund through incentives and credit programs.
-                </p>
-                <ul class="styled-list skills">
-                  <li>Tax planning</li>
-                  <li>Incentive negotiation</li>
-                </ul>
-              </details>
-            </div>
-            <a href="#top" class="back-to-top">Back to top</a>
-          </div>
-        </section>
-
-        <hr class="section-divider" aria-hidden="true" />
-
-        <div class="info-section bg-white" id="education">
-          <h2 class="section-title section-title-left">Education</h2>
-          <p class="education-blurb">
-            Highlights of Robert's academic background.
-          </p>
-          <ul class="styled-list education-grid">
-            <li>
-              LL.M., Taxation <em>(Cum Laude)</em> – University of San Diego
-              School of Law, 2000
-            </li>
-            <li>Juris Doctor – University of San Diego School of Law, 1999</li>
-            <li>
-              MBA, International Business – University of San Diego Graduate
-              Business School, 1999
-            </li>
-            <li>
-              <em>Merit Certificate</em>, International Corporate Structure –
-              Institute on International &amp; Comparative Law, Paris, 1996
-            </li>
-            <li>
-              Baccalaureus Artium, English Literature – Boston College, 1991
-            </li>
-            <li>
-              <em>Merit Certificate</em>, English Literature – Harris Manchester
-              College, Oxford University, 1990
-            </li>
-          </ul>
-          <details class="courses" open>
-            <summary>Courses &amp; Certifications</summary>
-            <ul class="styled-list">
-              <li>Bankruptcy Law Workshop – ABA, 2023</li>
-              <li>Certified Mediator Training – 2021</li>
-            </ul>
-          </details>
-          <a href="cv.pdf" class="btn" download>Download CV</a>
-        </div>
-        <div class="info-section bg-dark-gray" id="admissions">
-          <h2 class="section-title section-title-left">
-            Admissions &amp; Courts
-          </h2>
-          <div class="admissions-grid">
-            <div>
-              <h3>Admissions</h3>
-              <ul class="styled-list admissions-list">
-                <li>California (2000)</li>
-                <li>District of Columbia (2002)</li>
-                <li>Tennessee (2008)</li>
-                <li>North Carolina (2009)</li>
-                <li>South Carolina (2010)</li>
+      <!-- Experience Timeline Section -->
+      <section class="bg-gray experience-wrapper" id="experience">
+        <h2 class="section-title-left">Legal Experience</h2>
+        <hr class="section-divider full-width" aria-hidden="true" />
+        <div class="info-section cotton-paper">
+          <div class="timeline">
+            <details class="timeline-item" open>
+              <summary>
+                <span class="company">POHL, P.A.</span> – President
+                <span class="dates">2012–Present</span>
+              </summary>
+              <p>
+                Established a boutique law firm specializing in financial
+                litigation including distressed debt purchases, hard money
+                lending, bankruptcy, tax litigation and planning, estate
+                planning, securities offerings and corporate services for small
+                to mid‑sized clients.
+              </p>
+              <p>
+                Developed a fully integrated and paperless practice managing 749
+                clients and generating over $1MM in annual fees as a sole
+                practitioner using automated systems and customized software.
+              </p>
+              <ul class="styled-list skills">
+                <li>Financial litigation</li>
+                <li>Practice automation</li>
               </ul>
-            </div>
-            <div>
-              <h3>Courts</h3>
-              <ul class="styled-list admissions-list">
-                <li>United States Federal Courts (2000)</li>
-                <li>United States Tax Court (2000)</li>
-                <li>United States Supreme Court (2006)</li>
-                <li>United States Bankruptcy Court (2010)</li>
+            </details>
+            <details class="timeline-item" open>
+              <summary>
+                <span class="company">POHL Bankruptcy, LLC</span> – Manager
+                <span class="dates">2021–Present</span>
+              </summary>
+              <p>
+                Established a bankruptcy firm focused on representing debtors in
+                filings, litigation and related matters.
+              </p>
+              <ul class="styled-list skills">
+                <li>Debtor advocacy</li>
+                <li>Bankruptcy litigation</li>
               </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="info-section" id="licenses">
-          <h2 class="section-title section-title-left">Additional Licenses</h2>
-          <div class="license-list">
-            <h3 class="license-type">Insurance</h3>
-            <ul class="styled-list">
-              <li>
-                Insurance Broker: South Carolina (2013)
-                <a href="https://doi.sc.gov" target="_blank" rel="noopener"
-                  >Learn more</a
+            </details>
+            <details class="timeline-item" open>
+              <summary>
+                <span class="company">POHL Capital, LLC (dba POHL Realty)</span>
+                – Manager <span class="dates">201?–Present</span>
+              </summary>
+              <p>
+                Founded a real estate brokerage specializing in listing,
+                marketing and selling distressed residential and commercial
+                property.
+              </p>
+              <ul class="styled-list skills">
+                <li>Distressed property sales</li>
+                <li>Brokerage management</li>
+              </ul>
+            </details>
+            <details class="timeline-item" open>
+              <summary>
+                <span class="company">POHL Title Company, LLC</span> – Manager
+                &amp; Sole Member <span class="dates">2012–Present</span>
+              </summary>
+              <p>
+                Manage a title insurance agency licensed with First American
+                Title Insurance Company within South Carolina.
+              </p>
+              <ul class="styled-list skills">
+                <li>Title insurance</li>
+                <li>Agency management</li>
+              </ul>
+            </details>
+            <details class="timeline-item" open>
+              <summary>
+                <span class="company">POHL Talent Management, LLC</span> –
+                Manager <span class="dates">2018–Present</span>
+              </summary>
+              <p>
+                Established a talent agency representing musicians, writers,
+                actors, athletes and other performers.
+              </p>
+              <ul class="styled-list skills">
+                <li>Talent representation</li>
+                <li>Contract negotiation</li>
+              </ul>
+            </details>
+            <details class="timeline-item" open>
+              <summary>
+                <span class="company">POHL Property Management, LLC</span> –
+                Manager &amp; Sole Member <span class="dates">2012–2013</span>
+              </summary>
+              <p>
+                Managed and sold a property management business overseeing
+                residential and commercial properties including investment
+                homes, a bar, a restaurant and a hotel.
+              </p>
+              <ul class="styled-list skills">
+                <li>Property management</li>
+                <li>Asset disposition</li>
+              </ul>
+            </details>
+            <details class="timeline-item" open>
+              <summary>
+                <span class="company">Stodghill Law Firm Chartered</span> –
+                Associate <span class="dates">2011–2012</span>
+              </summary>
+              <p>
+                Performed duties similar to a corporate bankruptcy associate,
+                supporting complex restructuring matters.
+              </p>
+              <ul class="styled-list skills">
+                <li>Corporate bankruptcy</li>
+                <li>Client counseling</li>
+              </ul>
+            </details>
+            <details class="timeline-item" open>
+              <summary>
+                <span class="company">The Cooper Law Firm</span> – Corporate
+                Bankruptcy Associate <span class="dates">2010–2011</span>
+              </summary>
+              <p>
+                Interviewed, negotiated and managed individuals and businesses
+                in restructuring debt and monetizing assets through financing,
+                liability restructuring and bankruptcy filings.
+              </p>
+              <p>
+                Drafted and argued adversarial proceedings, motions,
+                applications and plans before the U.S. Bankruptcy Court.
+              </p>
+              <ul class="styled-list skills">
+                <li>Adversarial litigation</li>
+                <li>Restructuring strategy</li>
+              </ul>
+            </details>
+            <details class="timeline-item" open>
+              <summary>
+                <span class="company">Resurgent Capital Services, LP</span> –
+                Manager, Legal Services Compliance
+                <span class="dates">2009–2010</span>
+              </summary>
+              <p>
+                Analyzed distressed asset portfolios ranging from $2MM–$500MM
+                and developed litigation and liquidation plans to maximize
+                recovery.
+              </p>
+              <p>
+                Managed bankruptcy litigation, foreclosure and international
+                mortgage servicing departments overseeing secured accounts
+                across North America and the Caribbean.
+              </p>
+              <ul class="styled-list skills">
+                <li>Distressed asset recovery</li>
+                <li>Portfolio management</li>
+              </ul>
+            </details>
+            <details class="timeline-item" open>
+              <summary>
+                <span class="company"
+                  >Fell, Marking, Abkin, Montgomery, Granet &amp; Raney,
+                  LLP</span
                 >
-              </li>
-            </ul>
-            <h3 class="license-type">Real Estate</h3>
-            <ul class="styled-list">
-              <li>
-                Real Estate Broker: South Carolina (2012)
-                <a href="https://llr.sc.gov" target="_blank" rel="noopener"
-                  >Learn more</a
+                – Associate <span class="dates">2008–2009</span>
+              </summary>
+              <p>
+                Produced formation documents, licensing applications and related
+                materials to establish and finance businesses.
+              </p>
+              <p>
+                Drafted legal memos, briefs, opinions and research related to
+                taxes, liability, insurance, real property and land use.
+              </p>
+              <ul class="styled-list skills">
+                <li>Business formation</li>
+                <li>Legal research</li>
+              </ul>
+            </details>
+            <details class="timeline-item" open>
+              <summary>
+                <span class="company">Quality Home Loans</span> – General
+                Counsel, Executive Managing Director
+                <span class="dates">2007–2008</span>
+              </summary>
+              <p>
+                Formed a Delaware LLC to acquire, sell, securitize and trade
+                mortgage loans and similar instruments.
+              </p>
+              <p>
+                Negotiated leases and agreements, arranged capital and oversaw
+                licensing to originate, sell and securitize financial
+                instruments.
+              </p>
+              <ul class="styled-list skills">
+                <li>Securitization</li>
+                <li>Capital raising</li>
+              </ul>
+            </details>
+            <details class="timeline-item" open>
+              <summary>
+                <span class="company">Quality Home Loans</span> – General
+                Counsel, Executive Managing Director
+                <span class="dates">2006–2007</span>
+              </summary>
+              <p>
+                Managed legal, correspondent and capital‑markets divisions
+                completing ~$1B in mortgage originations and securities
+                annually.
+              </p>
+              <p>
+                Raised $60MM in private equity and $50MM in commercial paper
+                while establishing $300MM in credit facilities.
+              </p>
+              <ul class="styled-list skills">
+                <li>Mortgage finance</li>
+                <li>Compliance management</li>
+              </ul>
+            </details>
+            <details class="timeline-item" open>
+              <summary>
+                <span class="company">Countrywide Home Loans, Inc.</span> –
+                First Vice President, Senior Legal Counsel
+                <span class="dates">2002–2006</span>
+              </summary>
+              <p>
+                Managed teams purchasing, selling and securitizing approximately
+                $9B per month of mortgage loans.
+              </p>
+              <p>
+                Drafted and negotiated agreements, advised on underwriting and
+                servicing issues and developed compliance procedures.
+              </p>
+              <ul class="styled-list skills">
+                <li>Mortgage securitization</li>
+                <li>Regulatory compliance</li>
+              </ul>
+            </details>
+            <details class="timeline-item" open>
+              <summary>
+                <span class="company"
+                  >California Association of REALTORS&reg;, Inc.</span
                 >
-              </li>
-            </ul>
+                – Corporate Attorney <span class="dates">2001–2002</span>
+              </summary>
+              <p>
+                Prepared formation documents, acquired venture capital and
+                advised officers and directors across nine entities.
+              </p>
+              <p>
+                Handled acquisitions, IP matters, contract negotiations and
+                compliance for campaign and political laws.
+              </p>
+              <ul class="styled-list skills">
+                <li>Corporate governance</li>
+                <li>Intellectual property</li>
+              </ul>
+            </details>
+            <details class="timeline-item" open>
+              <summary>
+                <span class="company">KPMG, LLP</span> – Senior Tax Specialist
+                <span class="dates">2000–2001</span>
+              </summary>
+              <p>
+                Interpreted state tax and corporate codes to devise plans
+                decreasing taxes by over 80%.
+              </p>
+              <p>
+                Implemented tax‑minimization strategies and secured a $20MM
+                refund through incentives and credit programs.
+              </p>
+              <ul class="styled-list skills">
+                <li>Tax planning</li>
+                <li>Incentive negotiation</li>
+              </ul>
+            </details>
           </div>
+          <a href="#top" class="back-to-top">Back to top</a>
         </div>
       </section>
 
+      <hr class="section-divider" aria-hidden="true" />
+
+      <!-- Education Section -->
+      <div class="info-section bg-white" id="education">
+        <h2 class="section-title-left">Education</h2>
+        <p class="education-blurb">
+          Highlights of Robert's academic background.
+        </p>
+        <ul class="styled-list education-grid">
+          <li>
+            LL.M., Taxation <em>(Cum Laude)</em> – University of San Diego
+            School of Law, 2000
+          </li>
+          <li>Juris Doctor – University of San Diego School of Law, 1999</li>
+          <li>
+            MBA, International Business – University of San Diego Graduate
+            Business School, 1999
+          </li>
+          <li>
+            <em>Merit Certificate</em>, International Corporate Structure –
+            Institute on International &amp; Comparative Law, Paris, 1996
+          </li>
+          <li>
+            Baccalaureus Artium, English Literature – Boston College, 1991
+          </li>
+          <li>
+            <em>Merit Certificate</em>, English Literature – Harris Manchester
+            College, Oxford University, 1990
+          </li>
+        </ul>
+        <details class="courses" open>
+          <summary>Courses &amp; Certifications</summary>
+          <ul class="styled-list">
+            <li>Bankruptcy Law Workshop – ABA, 2023</li>
+            <li>Certified Mediator Training – 2021</li>
+          </ul>
+        </details>
+        <a href="cv.pdf" class="btn" download>Download CV</a>
+      </div>
+
+      <!-- Admissions & Courts Section -->
+      <div class="info-section bg-dark-gray" id="admissions">
+        <h2 class="section-title section-title-left">
+          Admissions &amp; Courts
+        </h2>
+        <div class="admissions-grid">
+          <div>
+            <h3>Admissions</h3>
+            <ul class="styled-list admissions-list">
+              <li>California (2000)</li>
+              <li>District of Columbia (2002)</li>
+              <li>Tennessee (2008)</li>
+              <li>North Carolina (2009)</li>
+              <li>South Carolina (2010)</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Courts</h3>
+            <ul class="styled-list admissions-list">
+              <li>United States Federal Courts (2000)</li>
+              <li>United States Tax Court (2000)</li>
+              <li>United States Supreme Court (2006)</li>
+              <li>United States Bankruptcy Court (2010)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Additional Licenses Section -->
+      <div class="info-section" id="licenses">
+        <h2 class="section-title-left">Additional Licenses</h2>
+        <div class="license-list">
+          <h3 class="license-type">Insurance</h3>
+          <ul class="styled-list">
+            <li>
+              Insurance Broker: South Carolina (2013)
+              <a href="https://doi.sc.gov" target="_blank" rel="noopener"
+                >Learn more</a
+              >
+            </li>
+          </ul>
+          <h3 class="license-type">Real Estate</h3>
+          <ul class="styled-list">
+            <li>
+              Real Estate Broker: South Carolina (2012)
+              <a href="https://llr.sc.gov" target="_blank" rel="noopener"
+                >Learn more</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Approach Section -->
       <section class="bg-gray" id="approach">
-        <h2 class="section-title">The Pohl Approach</h2>
+        <h2>The Pohl Approach</h2>
         <ul class="why-list styled-list">
           <li>
             <strong>Personalized Attention</strong> – each case receives
@@ -732,6 +733,7 @@
         </ul>
       </section>
 
+      <!-- Final Call-to-Action Section -->
       <section class="cta bg-white">
         <p>
           Need advice on your situation? We're here to help –
@@ -750,6 +752,7 @@
 
     <a href="#top" id="back-to-top">↑ Top</a>
 
+    <!-- Scripts (navigation, accordions, etc.) -->
     <script>
       const menuToggle = document.getElementById("menu-toggle");
       const nav = document.querySelector("header nav");
@@ -770,7 +773,6 @@
         document.body.removeChild(a);
         URL.revokeObjectURL(url);
       };
-
       nav.querySelectorAll("a").forEach((link) => {
         link.addEventListener("click", (e) => {
           if (link.classList.contains("add-contact")) {
@@ -783,18 +785,15 @@
           menuToggle.setAttribute("aria-expanded", "false");
         });
       });
-
       document.querySelectorAll(".download-vcard").forEach((link) => {
         link.addEventListener("click", triggerVCard);
       });
-
       // Close accordions on mobile
       if (window.matchMedia("(max-width: 768px)").matches) {
         document.querySelectorAll("details[open]").forEach((d) => {
           d.open = false;
         });
       }
-
       // Read more toggle
       const readMoreBtn = document.querySelector(".read-more");
       const moreText = document.querySelector(".more-text");
@@ -806,8 +805,7 @@
           readMoreBtn.textContent = expanded ? "Read more" : "Read less";
         });
       }
-
-      // Animate lists on scroll
+      // Animate list items on scroll
       const observer = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
@@ -819,12 +817,11 @@
         },
         { threshold: 0.1 },
       );
-
       document.querySelectorAll(".styled-list li").forEach((item) => {
         item.classList.add("fade-in");
         observer.observe(item);
       });
-
+      // Show/hide back-to-top button
       const backToTopBtn = document.getElementById("back-to-top");
       window.addEventListener("scroll", () => {
         if (window.scrollY > 400) backToTopBtn.classList.add("show");
@@ -837,26 +834,25 @@
     </script>
 
     <script>
-      /* About: highlight active chip across mobile and desktop chips */
+      /* About page: synchronize active quick-link chips on scroll */
       (function () {
         const containers = [
           document.getElementById("about-subnav"),
           document.getElementById("about-subnav-desktop"),
         ].filter(Boolean);
-
         if (!containers.length) return;
-
         const chipSets = containers.map((c) =>
-          Array.from(c.querySelectorAll("a.subnav-chip"))
+          Array.from(c.querySelectorAll("a.subnav-chip")),
         );
         const chips = chipSets.flat();
         const map = new Map(
           chips.map((a) => [
             a.getAttribute("href"),
-            chips.filter((x) => x.getAttribute("href") === a.getAttribute("href")),
-          ])
+            chips.filter(
+              (x) => x.getAttribute("href") === a.getAttribute("href"),
+            ),
+          ]),
         );
-
         const sections = [
           ...new Set(
             chips
@@ -864,23 +860,23 @@
               .filter(Boolean),
           ),
         ];
-
         function setActive(id) {
           chips.forEach((c) => c.removeAttribute("aria-current"));
           const group = map.get(id);
-          if (group) group.forEach((c) => c.setAttribute("aria-current", "page"));
+          if (group)
+            group.forEach((c) => c.setAttribute("aria-current", "page"));
         }
-
         const io = new IntersectionObserver(
           (entries) => {
             entries.forEach((entry) => {
-              if (entry.isIntersecting) setActive("#" + entry.target.id);
+              if (entry.isIntersecting) {
+                setActive("#" + entry.target.id);
+              }
             });
           },
-          { root: null, rootMargin: "-45% 0px -45% 0px", threshold: 0.01 },
+          { threshold: 0.25 },
         );
-
-        sections.forEach((sec) => io.observe(sec));
+        sections.forEach((section) => io.observe(section));
       })();
     </script>
   </body>
