@@ -138,22 +138,16 @@
           </div>
         </div>
       </section>
-
-      <div class="mobile-hero-links">
-        <div class="hero-actions">
-          <a href="#about" class="btn">Meet Robert</a>
-          <a href="contact.html" class="btn btn-secondary">Contact</a>
-        </div>
-        <div class="hero-links">
-          <a href="#about">About</a>
-          <a href="#experience">Experience</a>
-          <a href="#education">Education</a>
-          <a href="#admissions">Admissions</a>
-          <a href="#licenses">Licenses</a>
-          <a href="#approach">Approach</a>
-          <a href="#contact-info">Contact</a>
-        </div>
-      </div>
+      <!-- Mobile quick links, sticky -->
+      <nav id="about-subnav" class="mobile-subnav" aria-label="Quick section links">
+        <a class="subnav-chip" href="#about">About</a>
+        <a class="subnav-chip" href="#experience">Experience</a>
+        <a class="subnav-chip" href="#education">Education</a>
+        <a class="subnav-chip" href="#admissions">Admissions</a>
+        <a class="subnav-chip" href="#licenses">Licenses</a>
+        <a class="subnav-chip" href="#approach">Approach</a>
+        <a class="subnav-chip" href="#contact-info">Contact</a>
+      </nav>
 
       <section class="bg-white" id="about">
         <h2 class="section-title section-title-left">Meet Attorney Pohl</h2>
@@ -813,6 +807,47 @@
         e.preventDefault();
         window.scrollTo({ top: 0, behavior: "smooth" });
       });
+    </script>
+
+    <script>
+      /* About: highlight active chip as sections enter view, keep chip centered */
+      (function () {
+        const subnav = document.getElementById("about-subnav");
+        if (!subnav) return;
+
+        const chips = Array.from(subnav.querySelectorAll("a.subnav-chip"));
+        const map = new Map(chips.map((a) => [a.getAttribute("href"), a]));
+        const sections = chips
+          .map((a) => document.querySelector(a.getAttribute("href")))
+          .filter(Boolean);
+
+        function setActive(id) {
+          chips.forEach((c) => c.removeAttribute("aria-current"));
+          const active = map.get(id);
+          if (active) {
+            active.setAttribute("aria-current", "page");
+            // keep the active chip in view on small screens
+            active.scrollIntoView({
+              behavior: "smooth",
+              inline: "center",
+              block: "nearest",
+            });
+          }
+        }
+
+        const io = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                setActive("#" + entry.target.id);
+              }
+            });
+          },
+          { root: null, rootMargin: "-45% 0px -45% 0px", threshold: 0.01 },
+        );
+
+        sections.forEach((sec) => io.observe(sec));
+      })();
     </script>
   </body>
 </html>
