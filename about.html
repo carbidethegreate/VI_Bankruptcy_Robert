@@ -129,12 +129,8 @@
         </div>
       </section>
 
-      <!-- Sticky Desktop Toolbar with Quick Links -->
-      <div
-        class="about-toolbar desktop-only"
-        role="navigation"
-        aria-label="About quick links"
-      >
+      <!-- Desktop toolbar below hero -->
+      <div class="about-toolbar desktop-only" role="navigation" aria-label="About quick links">
         <div class="about-toolbar__inner">
           <img
             class="toolbar-logo"
@@ -144,12 +140,7 @@
             width="96"
             height="54"
           />
-          <a href="contact.html" class="btn toolbar-cta">Free Consultation</a>
-          <nav
-            id="about-subnav-desktop"
-            class="chip-nav"
-            aria-label="About section links"
-          >
+          <nav id="about-subnav-desktop" class="chip-nav" aria-label="About section links">
             <a class="subnav-chip" href="#about">About</a>
             <a class="subnav-chip" href="#experience">Experience</a>
             <a class="subnav-chip" href="#education">Education</a>
@@ -623,53 +614,59 @@
 
       <hr class="section-divider" aria-hidden="true" />
 
-      <!-- Education Section -->
+      <!-- Education -->
       <div class="info-section bg-white" id="education">
         <h2 class="section-title-left">Education</h2>
-        <p class="education-blurb">
-          Highlights of Robert's academic background.
-        </p>
-        <ul class="styled-list education-grid">
-          <li>
-            LL.M., Taxation <em>(Cum Laude)</em> – University of San Diego
-            School of Law, 2000
-          </li>
-          <li>Juris Doctor – University of San Diego School of Law, 1999</li>
-          <li>
-            MBA, International Business – University of San Diego Graduate
-            Business School, 1999
-          </li>
-          <li>
-            <em>Merit Certificate</em>, International Corporate Structure –
-            Institute on International &amp; Comparative Law, Paris, 1996
-          </li>
-          <li>
-            Baccalaureus Artium, English Literature – Boston College, 1991
-          </li>
-          <li>
-            <em>Merit Certificate</em>, English Literature – Harris Manchester
-            College, Oxford University, 1990
-          </li>
-        </ul>
+        <p class="education-blurb">Highlights of Robert’s academic background.</p>
+
+        <div class="edu-grid">
+          <article class="edu-card">
+            <h3>Law</h3>
+            <ul class="styled-list">
+              <li>LL.M., Taxation (Cum Laude), University of San Diego School of Law, 2000</li>
+              <li>Juris Doctor, University of San Diego School of Law, 1999</li>
+            </ul>
+          </article>
+
+          <article class="edu-card">
+            <h3>Business</h3>
+            <ul class="styled-list">
+              <li>MBA, International Business, University of San Diego Graduate Business School, 1999</li>
+            </ul>
+          </article>
+
+          <article class="edu-card">
+            <h3>International Study</h3>
+            <ul class="styled-list">
+              <li>Merit Certificate, International Corporate Structure, Institute on International &amp; Comparative Law, Paris, 1996</li>
+            </ul>
+          </article>
+
+          <article class="edu-card">
+            <h3>Undergraduate</h3>
+            <ul class="styled-list">
+              <li>Baccalaureus Artium, English Literature, Boston College, 1991</li>
+              <li>Merit Certificate, English Literature, Harris Manchester College, Oxford University, 1990</li>
+            </ul>
+          </article>
+        </div>
+
         <details class="courses" open>
           <summary>Courses &amp; Certifications</summary>
           <ul class="styled-list">
-            <li>Bankruptcy Law Workshop – ABA, 2023</li>
-            <li>Certified Mediator Training – 2021</li>
+            <li>Bankruptcy Law Workshop, ABA, 2023</li>
+            <li>Certified Mediator Training, 2021</li>
           </ul>
         </details>
-        <a href="cv.pdf" class="btn" download>Download CV</a>
       </div>
 
-      <!-- Admissions & Courts Section -->
-      <div class="info-section bg-dark-gray" id="admissions">
-        <h2 class="section-title section-title-left">
-          Admissions &amp; Courts
-        </h2>
-        <div class="admissions-grid">
-          <div>
+      <!-- Admissions & Courts, restyled to match index cards -->
+      <section class="bg-gray" id="admissions">
+        <h2 class="section-title">Admissions &amp; Courts</h2>
+        <div class="services services--tight">
+          <div class="service-card">
             <h3>Admissions</h3>
-            <ul class="styled-list admissions-list">
+            <ul class="styled-list">
               <li>California (2000)</li>
               <li>District of Columbia (2002)</li>
               <li>Tennessee (2008)</li>
@@ -677,9 +674,9 @@
               <li>South Carolina (2010)</li>
             </ul>
           </div>
-          <div>
+          <div class="service-card">
             <h3>Courts</h3>
-            <ul class="styled-list admissions-list">
+            <ul class="styled-list">
               <li>United States Federal Courts (2000)</li>
               <li>United States Tax Court (2000)</li>
               <li>United States Supreme Court (2006)</li>
@@ -687,7 +684,7 @@
             </ul>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- Additional Licenses Section -->
       <div class="info-section" id="licenses">

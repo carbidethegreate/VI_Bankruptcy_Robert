@@ -1471,3 +1471,93 @@ a.back-to-top {
     display: block;
   }
 }
+
+/* About toolbar, no CTA version */
+.about-toolbar__inner{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: .75rem 1rem;
+  display: grid;
+  grid-template-columns: auto 1fr; /* logo, chips */
+  gap: .75rem 1rem;
+  align-items: center;
+}
+
+/* Keep chips tidy when very wide */
+@media (min-width: 1200px){
+  .chip-nav { flex-wrap: nowrap; gap: .45rem; }
+  .subnav-chip { height: 2rem; padding: 0 .75rem; font-size: .92rem; }
+}
+
+/* Education, premium cards */
+.edu-grid{
+  display: grid;
+  gap: clamp(0.9rem, 2vw, 1.25rem);
+  grid-template-columns: 1fr;
+}
+@media (min-width: 900px){
+  .edu-grid{ grid-template-columns: 1fr 1fr; }
+}
+.edu-card{
+  background: #fff;
+  border: 1px solid rgba(19,35,38,.12);
+  border-radius: 14px;
+  padding: clamp(.9rem, 2.2vw, 1.25rem);
+  box-shadow: 0 10px 24px rgba(0,0,0,.06);
+}
+.edu-card h3{
+  margin: 0 0 .35rem 0;
+  font-size: 1.05rem;
+}
+
+/* Remove the old CV button space if any rules targeted it */
+#education .btn[download]{ display: none; }
+
+/* Admissions uses home page card system, tighten the grid a touch on desktop */
+.services--tight{
+  gap: clamp(0.9rem, 2vw, 1.25rem);
+  align-items: stretch;
+}
+.services--tight .service-card{
+  padding: clamp(.9rem, 2.2vw, 1.25rem);
+}
+
+/* Desktop breathing room, increase rhythm where things felt cramped */
+#about .about-wrapper,
+#summary .summary-content,
+.experience-wrapper .info-section,
+#education,
+#admissions,
+#licenses,
+#approach{
+  --pad-y: clamp(2.25rem, 4vw, 4rem);
+  padding-top: var(--pad-y);
+  padding-bottom: var(--pad-y);
+}
+.info-section,
+section.bg-white,
+section.bg-gray{ 
+  /* ensure consistent max width and center */
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Readability tweaks */
+.info-section p,
+.timeline p{ line-height: 1.65; }
+.styled-list li{ margin: .35rem 0; }
+
+/* Timeline spacing */
+.timeline{ gap: 1rem; }
+.timeline-item summary{
+  padding: .65rem .9rem;
+  border-radius: 10px;
+}
+.timeline-item > p{ margin: .5rem 0 0; }
+
+/* Make the hero breathe a bit more under the title */
+.hero.hero-about .hero-content p{ max-width: 720px; }
+
+/* If your Admissions old dark box remains elsewhere, neutralize it on this page */
+#admissions.bg-dark-gray{ background: transparent; }
