@@ -52,7 +52,8 @@
     </a>
     <button id="menu-toggle" class="btn" aria-expanded="false">☰ Menu</button>
     <nav>
-      <a href="about.html">About</a>
+      <a href="index.html" class="mobile-only" data-icon="🏠">Home</a>
+      <a href="about.html" data-icon="ℹ️">About</a>
       <div class="dropdown">
         <a href="index.html#services">Services ▾</a>
         <div class="dropdown-content">
@@ -60,11 +61,14 @@
           <a href="business-bankruptcy.html">Business Bankruptcy</a>
         </div>
       </div>
-      <a href="testimonials.html">Testimonials</a>
-      <a href="faq.html">FAQ</a>
-      <a href="contact.html">Contact</a>
-      <a href="pay-online.html" class="btn header-pay-link">Pay Online</a>
-  </nav>
+      <a href="personal-bankruptcy.html" class="mobile-only" data-icon="👤">Personal Bankruptcy</a>
+      <a href="business-bankruptcy.html" class="mobile-only" data-icon="💼">Business Bankruptcy</a>
+      <a href="testimonials.html" data-icon="💬">Testimonials</a>
+      <a href="faq.html" data-icon="❓">FAQ</a>
+      <a href="contact.html" data-icon="✉️">Contact</a>
+      <a href="pay-online.html" class="btn header-pay-link" data-icon="💳">Pay Online</a>
+      <a href="#" class="mobile-only close-nav" data-icon="❌">Close</a>
+    </nav>
   </header>
 
   <nav class="breadcrumb" aria-label="Breadcrumb">
@@ -216,14 +220,20 @@
   </footer>
 
   <script>
-    const menuToggle = document.getElementById('menu-toggle');
-    menuToggle.addEventListener('click', function () {
-      const nav = document.querySelector('header nav');
-      const expanded = this.getAttribute('aria-expanded') === 'true';
-      this.setAttribute('aria-expanded', (!expanded).toString());
-      nav.classList.toggle('open');
+  const menuToggle = document.getElementById('menu-toggle');
+  const nav = document.querySelector('header nav');
+  menuToggle.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded', open);
+  });
+  nav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', (e) => {
+      if (link.classList.contains('close-nav')) e.preventDefault();
+      nav.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
     });
-    </script>
+  });
+</script>
 
     <script type="application/ld+json">
     {

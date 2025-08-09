@@ -503,6 +503,10 @@ blockquote cite {
   display: none;
 }
 
+.mobile-only {
+  display: none;
+}
+
 /* Pay Online link adjustments */
 .header-pay-link {
   margin-left: 1rem;
@@ -558,20 +562,47 @@ footer a {
   }
   .site-header nav {
     display: none;
-    flex-direction: column;
-    text-align: center;
-    width: 100%;
-    margin: 0;
   }
   .site-header nav.open {
     display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--vi-nav);
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    padding: 4rem 1rem 1rem;
+    overflow-y: auto;
+    z-index: 1000;
   }
-  .site-header nav .dropdown:hover .dropdown-content {
+  .site-header nav a {
+    flex: 0 0 calc(50% - 2rem);
+    margin: 0.5rem;
+    padding: 1rem;
+    background: none;
+    border: 1px solid var(--vi-gold);
+    border-radius: 8px;
+    text-align: center;
+  }
+  .site-header nav a::before {
+    content: attr(data-icon);
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  .site-header nav a.header-pay-link {
+    background: var(--vi-gold);
+    color: #000;
+  }
+  .site-header nav .dropdown,
+  .site-header nav .dropdown-content {
     display: none;
   }
-  .site-header nav.open .dropdown-content {
-    display: block;
-    position: static;
+  .mobile-only {
+    display: flex;
   }
   #menu-toggle {
     display: block;
