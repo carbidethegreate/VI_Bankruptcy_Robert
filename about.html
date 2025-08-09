@@ -93,7 +93,7 @@
         <h3 class="about-heading"><span class="name-highlight">Robert A. Pohl</span> – Bankruptcy Attorney</h3>
         <div class="personal-statement">
           <p>Robert A. Pohl is a seasoned bankruptcy attorney holding a J.D., LL.M. in Tax, and an MBA. Admitted in the U.S. Virgin Islands and multiple states, he has spent more than 25&nbsp;years helping individuals and businesses overcome debt.</p>
-          <p class="more-text">Each client is unique, and each situation is unique. The difference between good and amazing service is not only addressing the common problems but tailoring solutions to attend to each detail that is unique. I believe in taking the time to get to know each client and making sure that they are well taken care of.</p>
+          <p class="more-text">Each client is unique, and each situation is unique. <q>The difference between good and amazing service is not only addressing the common problems but tailoring solutions to attend to each detail that is unique.</q> I believe in taking the time to get to know each client and making sure that they are well taken care of.</p>
           <button class="read-more" aria-expanded="false">Read more</button>
         </div>
         <blockquote class="pull-quote">Financial freedom starts with honest advice and tailored strategy.</blockquote>
@@ -110,29 +110,50 @@
       <h2 class="section-title">Contact</h2>
       <div class="contact-card">
         <p><strong>U.S. Virgin Islands Offices</strong></p>
-        <div class="contact-columns">
-          <div class="office">
-            <h4>St. Thomas</h4>
-            <p>5316 Yacht Haven Grande, Suite N‑104, Box 30<br />St. Thomas, VI 00802</p>
-          </div>
-          <div class="office">
-            <h4>St. John</h4>
-            <p>5000 Estate Enighed, P.O. Box 343<br />St. John, VI 00830</p>
-          </div>
-          <div class="office">
-            <h4>St. Croix</h4>
-            <p>6002 Diamond Ruby, Suite 3, PMB 633<br />Christiansted, VI 00820</p>
-          </div>
-        </div>
+        <details class="office-details">
+          <summary>St. Thomas</summary>
+          <p>5316 Yacht Haven Grande, Suite N‑104, Box 30<br />St. Thomas, VI 00802</p>
+        </details>
+        <details class="office-details">
+          <summary>St. John</summary>
+          <p>5000 Estate Enighed, P.O. Box 343<br />St. John, VI 00830</p>
+        </details>
+        <details class="office-details">
+          <summary>St. Croix</summary>
+          <p>6002 Diamond Ruby, Suite 3, PMB 633<br />Christiansted, VI 00820</p>
+        </details>
         <p class="contact-phones"><span class="icon" aria-hidden="true">📞</span> Office (340) 203‑3333 • Mobile (864) 361‑4827</p>
-        <p class="contact-email"><span class="icon" aria-hidden="true">✉️</span> <a href="mailto:Robert@POHLPA.com">Robert@POHLPA.com</a></p>
+        <p class="contact-email"><span class="icon" aria-hidden="true">✉️</span> <a href="mailto:Robert@POHLPA.com">Robert@POHLPA.com</a> <a href="#" class="download-vcard">Download vCard</a></p>
       </div>
     </div>
 
     <div class="info-section" id="summary">
       <h2 class="section-title">Professional Summary</h2>
-      <p>Bankruptcy and financial‑litigation attorney (practicing since 2000) serving individuals and businesses across the U.S. Virgin Islands through offices on St. Thomas, St. John, and St. Croix. Founder of POHL, P.A. and POHL Bankruptcy, LLC. Experience includes distressed debt, bankruptcy filings and litigation, tax litigation and planning, corporate and securities work, real estate, estate planning, and related matters.</p>
+      <div class="summary-content">
+        <div class="summary-main">
+          <h3>Overview</h3>
+          <p>Bankruptcy and financial‑litigation attorney practicing since 2000, serving individuals and businesses across the U.S. Virgin Islands through offices on St. Thomas, St. John, and St. Croix.</p>
+          <h3>Practice Focus</h3>
+          <p>Founder of POHL, P.A. and POHL Bankruptcy, LLC with a practice centered on debtor representation and strategic financial guidance.</p>
+          <details class="accordion">
+            <summary>Additional Expertise</summary>
+            <p>Experience includes distressed debt, bankruptcy filings and litigation, tax litigation and planning, corporate and securities work, real estate, estate planning, and related matters.</p>
+          </details>
+          <a href="contact.html" class="btn request-consult">Request Consultation</a>
+        </div>
+        <aside class="summary-sidebar">
+          <h3>Core Expertise</h3>
+          <ul class="styled-list">
+            <li><strong>Bankruptcy filings</strong></li>
+            <li><strong>Financial litigation</strong></li>
+            <li><em>Tax planning &amp; litigation</em></li>
+            <li>Corporate &amp; securities law</li>
+          </ul>
+        </aside>
+      </div>
     </div>
+
+    <hr class="section-divider" aria-hidden="true" />
 
     <div class="info-section cotton-paper" id="experience">
       <h2 class="section-title">Legal Experience</h2>
@@ -285,20 +306,24 @@
     const open = nav.classList.toggle('open');
     menuToggle.setAttribute('aria-expanded', open);
   });
+  const triggerVCard = (e) => {
+    e.preventDefault();
+    const vCard = `BEGIN:VCARD\nVERSION:3.0\nFN:Pohl Bankruptcy\nORG:Pohl Bankruptcy, LLC\nTEL;TYPE=work,voice:+1-340-203-3333\nEMAIL:robert@pohlbankruptcy.com\nEND:VCARD`;
+    const blob = new Blob([vCard], { type: 'text/vcard' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'pohl-bankruptcy.vcf';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  };
+
   nav.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', (e) => {
       if (link.classList.contains('add-contact')) {
-        e.preventDefault();
-        const vCard = `BEGIN:VCARD\nVERSION:3.0\nFN:Pohl Bankruptcy\nORG:Pohl Bankruptcy, LLC\nTEL;TYPE=work,voice:+1-340-203-3333\nEMAIL:robert@pohlbankruptcy.com\nEND:VCARD`;
-        const blob = new Blob([vCard], { type: 'text/vcard' });
-        const url = URL.createObjectURL(blob);
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = 'pohl-bankruptcy.vcf';
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
-        URL.revokeObjectURL(url);
+        triggerVCard(e);
       }
       if (link.classList.contains('close-nav')) {
         e.preventDefault();
@@ -306,6 +331,10 @@
       nav.classList.remove('open');
       menuToggle.setAttribute('aria-expanded', 'false');
     });
+  });
+
+  document.querySelectorAll('.download-vcard').forEach(link => {
+    link.addEventListener('click', triggerVCard);
   });
 
   // Read more toggle
