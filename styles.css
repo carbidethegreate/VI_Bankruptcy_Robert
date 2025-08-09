@@ -593,6 +593,15 @@ footer a {
     font-size: 2rem;
     margin-bottom: 0.5rem;
   }
+  .site-header nav.open a {
+    flex: 0 0 calc(50% - 1rem);
+    margin: 0.25rem;
+    padding: 0.5rem;
+  }
+  .site-header nav.open a::before {
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+  }
   .site-header nav a.header-pay-link {
     background: var(--vi-gold);
     color: #000;
