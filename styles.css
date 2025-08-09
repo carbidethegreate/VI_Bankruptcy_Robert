@@ -1330,3 +1330,84 @@ a.back-to-top {
 @media (min-width: 900px){
   #about-subnav{ display:none; }
 }
+
+/* Desktop toolbar layout, with tiny ghosted logo on the left */
+.about-toolbar {
+  position: sticky;
+  top: 0; /* adjust if your site header is sticky with a custom height */
+  z-index: 40;
+  background: #ffffff;
+  border-bottom: 1px solid rgba(19, 35, 38, 0.08);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+}
+.about-toolbar__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: .75rem 1rem;
+  display: grid;
+  grid-template-columns: auto auto 1fr; /* logo, CTA, chips */
+  gap: 1rem;
+  align-items: center;
+}
+
+/* tiny bird */
+.toolbar-logo{
+  width: clamp(28px, 2.6vw, 44px);
+  height: auto;
+  opacity: .38;
+  filter: grayscale(1) contrast(90%) brightness(105%);
+  user-select: none;
+  pointer-events: none;
+}
+
+/* CTA stays compact */
+.toolbar-cta { white-space: nowrap; }
+
+/* Chip nav matches mobile pills, tuned for desktop */
+.chip-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 2.25rem;
+}
+.subnav-chip {
+  display: inline-flex;
+  align-items: center;
+  height: 2.25rem;
+  padding: 0 .9rem;
+  border-radius: 999px;
+  background: #f4f6f7;
+  color: #132326;
+  font-size: .95rem;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: background .2s, border-color .2s, color .2s;
+}
+.subnav-chip:hover { background: #e8eef0; }
+.subnav-chip[aria-current="page"] {
+  background: #1b3b42; /* site teal family */
+  color: #fff;
+}
+
+/* Single line compression on wide screens */
+@media (min-width: 1200px){
+  .chip-nav { flex-wrap: nowrap; gap: .4rem; }
+  .subnav-chip { height: 2rem; padding: 0 .75rem; font-size: .92rem; }
+  .about-toolbar__inner { gap: .75rem; }
+}
+@media (min-width: 1440px){
+  /* relax spacing again when there is room */
+  .chip-nav { gap: .5rem; }
+  .subnav-chip { height: 2.1rem; padding: 0 .8rem; font-size: .94rem; }
+}
+
+/* Keep desktop items off on small screens */
+.desktop-only { display: none; }
+@media (min-width: 992px){
+  .desktop-only { display: block; }
+  /* ensure nothing leaks into the hero on desktop */
+  .hero.hero-about .hero-actions,
+  .hero.hero-about .hero-links { display: none !important; }
+}
