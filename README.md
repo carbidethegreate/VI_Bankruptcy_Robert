@@ -402,7 +402,7 @@ focus outline 2 px #1B3940
 Icon strokes / fills
 default #59453E
 on dark bg make icon white
-All contrast ratios meet WCAG AA—Primary 1 on white is 9.2 : 1; white on Primary 1 is 9.2 : 1.
+All contrast ratios meet WCAG AA - Primary 1 on white is 9.2 : 1; white on Primary 1 is 9.2 : 1.
 
 
 
@@ -930,7 +930,7 @@ Social Media & Digital Assets: For social media avatars (like a Facebook page o
 Advertisements & Flyers: If creating a print ad (say in a local newspaper or a flyer for a community bulletin), all elements from this guide should be applied. Use the logo prominently, the navy/teal palette, and the same fonts so that someone who has seen the website will visually connect the two. For a black-and-white newspaper ad, use the one-color logo in black and maintain design with white space and bold text where needed (even without teal, the design can echo the same layout style). For a color brochure or flyer, you might have a navy header with white logo, teal callout text for a special offer (“Free Consultation!” in Open Sans Bold Teal), and at least one local image with the same calming feel. Always include the website URL in materials, set in Open Sans or Merriweather so it doesn’t look out of place. Check that any externally produced materials (promo items, signage) use the correct logo files and color references – e.g., if embroidering the logo on a shirt, provide the thread color codes corresponding to our Pantone colors.
 
 
-By applying the standards across all these scenarios, we create a unified brand experience. Whether someone is visiting the website, holding a business card, or seeing a social media post, the visual cues consistently tell them: this is the same trustworthy Virgin Islands bankruptcy law service. Over time, this consistency builds brand recognition and trust — exactly what we want for a legal practice that relies on reputation.
+By applying the standards across all these scenarios, we create a unified brand experience. Whether someone is visiting the website, holding a business card, or seeing a social media post, the visual cues consistently tell them: this is the same trustworthy Virgin Islands bankruptcy law service. Over time, this consistency builds brand recognition and trust - exactly what we want for a legal practice that relies on reputation.
 
 
 AI Prompt Suggestions for Asset Creation
