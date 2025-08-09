@@ -49,8 +49,14 @@
       <a href="faq.html">FAQ</a>
       <a href="contact.html">Contact</a>
       <a href="pay-online.html" class="btn header-pay-link">Pay Online</a>
-    </nav>
+  </nav>
   </header>
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="index.html">Home</a> <span> › </span>
+    <a href="index.html#services">Services</a> <span> › </span>
+    <span aria-current="page">Business Bankruptcy</span>
+  </nav>
 
   <main id="main">
 
@@ -58,6 +64,18 @@
     <div class="hero-content">
       <h1>Business Bankruptcy in the U.S. Virgin Islands</h1>
       <p>Local counsel for owners and managers in St. Thomas, St. John, and St. Croix. Protect value, stabilize cash flow, and choose the right path forward.</p>
+      <div class="hero-actions">
+        <a href="contact.html" class="btn">Free Consultation</a>
+        <a href="tel:+13402033333" class="btn">Call 340-203-3333</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white" aria-label="Proof points">
+    <div class="services">
+      <div class="service-card"><h3>Local, VI Licensed</h3><p>St. Thomas, St. John, St. Croix</p></div>
+      <div class="service-card"><h3>25+ Years Experience</h3><p>Bankruptcy and distressed debt</p></div>
+      <div class="service-card"><h3>Confidential Consult</h3><p>Clear options in one call</p></div>
     </div>
   </section>
 
@@ -104,19 +122,28 @@
 
   <section class="bg-gray">
     <h2 class="section-title">Attorney Profile</h2>
-    <p>Clients work directly with <a href="about.html">Attorney Robert A. Pohl</a>, a Virgin Islands admitted lawyer with more than 25 years of experience in bankruptcy, distressed debt, real estate, and related matters. Offices serve St. Thomas, St. John, and St. Croix, and consultations are available by phone or in person.</p>
-    <p><strong>Phone:</strong> <a href="tel:+13402033333">340-203-3333</a><br />
-       <strong>Email:</strong> <a href="mailto:Robert@POHLPA.com">Robert@POHLPA.com</a></p>
-    <p><a href="testimonials.html">Read testimonials</a> or explore common questions in our <a href="faq.html">FAQ</a>.</p>
+    <div class="attorney-card">
+      <img src="Profile.jpg.webp" alt="Robert Pohl, Bankruptcy Attorney" loading="lazy" decoding="async" width="100" height="100" />
+      <div class="attorney-card__content">
+        <h3>Work directly with Robert A. Pohl</h3>
+        <ul class="styled-list">
+          <li>More than two decades guiding clients through bankruptcy, tax, and financial matters.</li>
+          <li>Admitted in the Virgin Islands with local knowledge of St. Thomas, St. John, and St. Croix courts.</li>
+          <li>Clear plans, plain language, and transparent fees.</li>
+        </ul>
+        <p><strong>Phone:</strong> <a href="tel:+13402033333">340-203-3333</a><br>
+           <strong>Email:</strong> <a href="mailto:Robert@POHLPA.com">Robert@POHLPA.com</a></p>
+      </div>
+    </div>
   </section>
-  <section class="bg-gray">
-    <h2 class="section-title">Frequently Asked Questions</h2>
-    <div class="faq">
-      <details>
-        <summary>Will Chapter 11 let me keep operating while I catch up on rent and vendor balances?</summary>
-        <p>Yes, Chapter 11 allows operations to continue under court protection while you propose a plan that restructures leases and debts.</p>
-      </details>
-      <details>
+    <section class="bg-gray">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-list">
+        <details>
+          <summary>Will Chapter 11 let me keep operating while I catch up on rent and vendor balances?</summary>
+          <p>Yes, Chapter 11 allows operations to continue under court protection while you propose a plan that restructures leases and debts.</p>
+        </details>
+        <details>
         <summary>What is Subchapter V and do I qualify?</summary>
         <p>Subchapter V is a streamlined Chapter 11 option for qualifying small businesses that can reduce cost and accelerate plan confirmation.</p>
       </details>
@@ -155,10 +182,10 @@
       this.setAttribute('aria-expanded', (!expanded).toString());
       nav.classList.toggle('open');
     });
-  </script>
+    </script>
 
-  <script type="application/ld+json">
-  {
+    <script type="application/ld+json">
+    {
     "@context": "https://schema.org",
     "@type": "LegalService",
     "name": "POHL Bankruptcy, LLC",
@@ -191,15 +218,19 @@
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
-    "@type":"FAQPage",
-    "mainEntity":[
-      {"@type":"Question","name":"Will Chapter 11 let me keep operating while I catch up on rent and vendor balances?","acceptedAnswer":{"@type":"Answer","text":"Yes, Chapter 11 allows operations to continue under court protection while you propose a plan that restructures leases and debts."}},
-      {"@type":"Question","name":"What is Subchapter V and do I qualify?","acceptedAnswer":{"@type":"Answer","text":"Subchapter V is a streamlined Chapter 11 option for qualifying small businesses that can reduce cost and accelerate plan confirmation."}},
-      {"@type":"Question","name":"Can I use Chapter 11 to renegotiate or exit an expensive lease?","acceptedAnswer":{"@type":"Answer","text":"Chapter 11 lets you assume, assume and cure, or reject leases, subject to court approval and plan terms."}},
-      {"@type":"Question","name":"What happens to assets in a Chapter 7 liquidation?","acceptedAnswer":{"@type":"Answer","text":"A trustee collects and sells non-exempt business assets and distributes proceeds to creditors according to priority rules."}},
-      {"@type":"Question","name":"What if I signed personal guarantees?","acceptedAnswer":{"@type":"Answer","text":"We evaluate personal exposure and often pair a business strategy with a personal Chapter 13 or Chapter 7 to manage guarantees."}}
-    ]
-  }
-  </script>
-</body>
+      "@type":"FAQPage",
+      "mainEntity":[
+        {"@type":"Question","name":"Will Chapter 11 let me keep operating while I catch up on rent and vendor balances?","acceptedAnswer":{"@type":"Answer","text":"Yes, Chapter 11 allows operations to continue under court protection while you propose a plan that restructures leases and debts."}},
+        {"@type":"Question","name":"What is Subchapter V and do I qualify?","acceptedAnswer":{"@type":"Answer","text":"Subchapter V is a streamlined Chapter 11 option for qualifying small businesses that can reduce cost and accelerate plan confirmation."}},
+        {"@type":"Question","name":"Can I use Chapter 11 to renegotiate or exit an expensive lease?","acceptedAnswer":{"@type":"Answer","text":"Chapter 11 lets you assume, assume and cure, or reject leases, subject to court approval and plan terms."}},
+        {"@type":"Question","name":"What happens to assets in a Chapter 7 liquidation?","acceptedAnswer":{"@type":"Answer","text":"A trustee collects and sells non-exempt business assets and distributes proceeds to creditors according to priority rules."}},
+        {"@type":"Question","name":"What if I signed personal guarantees?","acceptedAnswer":{"@type":"Answer","text":"We evaluate personal exposure and often pair a business strategy with a personal Chapter 13 or Chapter 7 to manage guarantees."}}
+      ]
+    }
+    </script>
+  <div class="mobile-cta" role="region" aria-label="Quick actions">
+    <a href="tel:+13402033333">Call</a>
+    <a href="contact.html">Free Consult</a>
+  </div>
+  </body>
 </html>

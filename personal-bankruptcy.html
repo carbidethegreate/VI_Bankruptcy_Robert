@@ -49,8 +49,14 @@
       <a href="faq.html">FAQ</a>
       <a href="contact.html">Contact</a>
       <a href="pay-online.html" class="btn header-pay-link">Pay Online</a>
-    </nav>
+  </nav>
   </header>
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="index.html">Home</a> <span> › </span>
+    <a href="index.html#services">Services</a> <span> › </span>
+    <span aria-current="page">Personal Bankruptcy</span>
+  </nav>
 
   <main id="main">
 
@@ -58,6 +64,18 @@
     <div class="hero-content">
       <h1>Personal Bankruptcy in the U.S. Virgin Islands</h1>
       <p>Confident, local guidance for a real fresh start. Learn how Chapter 7 or Chapter 13 can protect income and assets, then choose a plan that fits your life.</p>
+      <div class="hero-actions">
+        <a href="contact.html" class="btn">Free Consultation</a>
+        <a href="tel:+13402033333" class="btn">Call 340-203-3333</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white" aria-label="Proof points">
+    <div class="services">
+      <div class="service-card"><h3>Local, VI Licensed</h3><p>St. Thomas, St. John, St. Croix</p></div>
+      <div class="service-card"><h3>25+ Years Experience</h3><p>Bankruptcy and distressed debt</p></div>
+      <div class="service-card"><h3>Confidential Consult</h3><p>Clear options in one call</p></div>
     </div>
   </section>
 
@@ -104,20 +122,29 @@
 
   <section class="bg-gray">
     <h2 class="section-title">Attorney Profile</h2>
-    <p>You will work directly with <a href="about.html">Attorney Robert A. Pohl</a>, admitted in the Virgin Islands with more than two decades of experience in bankruptcy, tax, and financial matters. We serve clients across St. Thomas, St. John, and St. Croix with flexible scheduling and transparent fees.</p>
-    <p><strong>Phone:</strong> <a href="tel:+13402033333">340-203-3333</a><br />
-       <strong>Email:</strong> <a href="mailto:Robert@POHLPA.com">Robert@POHLPA.com</a></p>
-    <p>Read <a href="testimonials.html">client testimonials</a> and visit our <a href="faq.html">FAQ</a> for more answers.</p>
+    <div class="attorney-card">
+      <img src="Profile.jpg.webp" alt="Robert Pohl, Bankruptcy Attorney" loading="lazy" decoding="async" width="100" height="100" />
+      <div class="attorney-card__content">
+        <h3>Work directly with Robert A. Pohl</h3>
+        <ul class="styled-list">
+          <li>More than two decades guiding clients through bankruptcy, tax, and financial matters.</li>
+          <li>Admitted in the Virgin Islands with local knowledge of St. Thomas, St. John, and St. Croix courts.</li>
+          <li>Clear plans, plain language, and transparent fees.</li>
+        </ul>
+        <p><strong>Phone:</strong> <a href="tel:+13402033333">340-203-3333</a><br>
+           <strong>Email:</strong> <a href="mailto:Robert@POHLPA.com">Robert@POHLPA.com</a></p>
+      </div>
+    </div>
   </section>
 
-  <section class="bg-white">
-    <h2 class="section-title">Expanded FAQ</h2>
-    <div class="faq">
-      <details>
-        <summary>Will I lose my house or car if I file?</summary>
-        <p>Both Chapter 7 and Chapter 13 include tools to protect a home or car. We will explain how exemptions and payment plans can work in your case.</p>
-      </details>
-      <details>
+    <section class="bg-white">
+      <h2 class="section-title">Expanded FAQ</h2>
+      <div class="faq-list">
+        <details>
+          <summary>Will I lose my house or car if I file?</summary>
+          <p>Both Chapter 7 and Chapter 13 include tools to protect a home or car. We will explain how exemptions and payment plans can work in your case.</p>
+        </details>
+        <details>
         <summary>Can bankruptcy help with old tax debt?</summary>
         <p>Some tax debts may be dischargeable if certain conditions are met. Others can be paid through a Chapter 13 plan.</p>
       </details>
@@ -156,20 +183,24 @@
       this.setAttribute('aria-expanded', (!expanded).toString());
       nav.classList.toggle('open');
     });
-  </script>
+    </script>
 
-  <script type="application/ld+json">
-  {
+    <script type="application/ld+json">
+    {
     "@context":"https://schema.org",
-    "@type":"FAQPage",
-    "mainEntity":[
-      {"@type":"Question","name":"Will I lose my house or car if I file?","acceptedAnswer":{"@type":"Answer","text":"Both Chapter 7 and Chapter 13 include tools to protect a home or car. We will explain how exemptions and payment plans can work in your case."}},
-      {"@type":"Question","name":"Can bankruptcy help with old tax debt?","acceptedAnswer":{"@type":"Answer","text":"Some tax debts may be dischargeable if certain conditions are met. Others can be paid through a Chapter 13 plan."}},
-      {"@type":"Question","name":"What happens to student loans?","acceptedAnswer":{"@type":"Answer","text":"Student loans are generally not discharged, except in limited hardship cases. We can review whether relief may be available."}},
-      {"@type":"Question","name":"How long will bankruptcy stay on my credit report, and how soon can I rebuild?","acceptedAnswer":{"@type":"Answer","text":"A Chapter 7 typically appears for up to 10 years, a Chapter 13 for up to 7 years. Many clients begin rebuilding credit within the first year."}},
-      {"@type":"Question","name":"Do both spouses have to file?","acceptedAnswer":{"@type":"Answer","text":"No. One spouse can file without the other. We will model whether a joint or single filing makes better sense."}}
-    ]
-  }
-  </script>
-</body>
+      "@type":"FAQPage",
+      "mainEntity":[
+        {"@type":"Question","name":"Will I lose my house or car if I file?","acceptedAnswer":{"@type":"Answer","text":"Both Chapter 7 and Chapter 13 include tools to protect a home or car. We will explain how exemptions and payment plans can work in your case."}},
+        {"@type":"Question","name":"Can bankruptcy help with old tax debt?","acceptedAnswer":{"@type":"Answer","text":"Some tax debts may be dischargeable if certain conditions are met. Others can be paid through a Chapter 13 plan."}},
+        {"@type":"Question","name":"What happens to student loans?","acceptedAnswer":{"@type":"Answer","text":"Student loans are generally not discharged, except in limited hardship cases. We can review whether relief may be available."}},
+        {"@type":"Question","name":"How long will bankruptcy stay on my credit report, and how soon can I rebuild?","acceptedAnswer":{"@type":"Answer","text":"A Chapter 7 typically appears for up to 10 years, a Chapter 13 for up to 7 years. Many clients begin rebuilding credit within the first year."}},
+        {"@type":"Question","name":"Do both spouses have to file?","acceptedAnswer":{"@type":"Answer","text":"No. One spouse can file without the other. We will model whether a joint or single filing makes better sense."}}
+      ]
+    }
+    </script>
+  <div class="mobile-cta" role="region" aria-label="Quick actions">
+    <a href="tel:+13402033333">Call</a>
+    <a href="contact.html">Free Consult</a>
+  </div>
+  </body>
 </html>
