@@ -668,7 +668,7 @@ blockquote cite {
 
 /* Footer */
 footer {
-  background: var(--vi-1);
+  background: #1C2A24;
   color: #fff;
   padding: 2rem 1.25rem;
   font-size: 0.875rem;
