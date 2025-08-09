@@ -428,16 +428,24 @@ h2 {
   opacity: 1;
   transform: none;
 }
-.contact-columns {
-  display: grid;
-  gap: 1rem;
-  margin: 1rem 0;
+.contact-card {
+  background: var(--vi-gray);
+  padding: 1rem 1.5rem;
+  border-left: 4px solid var(--vi-gold);
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
-.contact-card h4 {
-  margin: 0 0 0.25rem;
+
+.office-details {
+  margin: 0.5rem 0;
+}
+
+.office-details summary {
   font-family: "Merriweather", serif;
   color: var(--vi-1);
   font-size: 1rem;
+  cursor: pointer;
 }
 .icon {
   margin-right: 0.25rem;
@@ -446,10 +454,29 @@ h2 {
 .contact-email {
   margin: 0.5rem 0 0;
 }
+.contact-email a + a {
+  margin-left: 0.5rem;
+}
 @media (min-width: 600px) {
-  .contact-columns {
-    grid-template-columns: repeat(3, 1fr);
+  .office-details {
+    margin: 0.5rem 0;
   }
+}
+
+#contact-info .section-title {
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+#contact-info .section-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 60px;
+  height: 3px;
+  background: var(--vi-gold);
 }
 
 .info-section {
@@ -464,12 +491,53 @@ h2 {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
-.contact-card {
-  background: var(--vi-gray);
-  padding: 1rem 1.5rem;
-  border-left: 4px solid var(--vi-gold);
-  margin-bottom: 1rem;
+.summary-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
 }
+
+.summary-main {
+  flex: 2 1 300px;
+}
+
+.summary-sidebar {
+  flex: 1 1 200px;
+}
+
+.summary-sidebar h3 {
+  margin-top: 0;
+  font-family: "Merriweather", serif;
+  color: var(--vi-1);
+}
+
+.accordion {
+  margin-top: 1rem;
+}
+
+.accordion summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.request-consult {
+  margin-top: 1rem;
+}
+
+.section-divider {
+  border: 0;
+  border-top: 1px solid var(--vi-gray);
+  max-width: 1100px;
+  margin: 2rem auto;
+}
+
+@media (max-width: 768px) {
+  .summary-content {
+    flex-direction: column;
+  }
+}
+
 
 .experience .job {
   margin-bottom: 1.5rem;
