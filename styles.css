@@ -1545,3 +1545,6 @@ section.bg-gray{
 
 /* If your Admissions old dark box remains elsewhere, neutralize it on this page */
 #admissions.bg-dark-gray{ background: transparent; }
+#thank-you {
+  display: none;
+}
