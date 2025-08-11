@@ -3,12 +3,12 @@
   "short_name": "VI Bankruptcy",
   "icons": [
     {
-      "src": "https://imagedelivery.net/MqlML99ManDWvfuYMb9PmQ/6b6812b8-983a-4d5e-cd89-6f551ac50600/public",
+      "src": "/android-chrome-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "https://imagedelivery.net/MqlML99ManDWvfuYMb9PmQ/b0e1c617-ab4f-4cec-fcd3-069434816600/public",
+      "src": "/android-chrome-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
