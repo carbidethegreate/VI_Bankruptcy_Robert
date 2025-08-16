@@ -1,6 +1,4 @@
 User-agent: *
 Allow: /cdn-cgi/imagedelivery/
 Disallow: /cdn-cgi/
-Disallow: /private/
-Crawl-delay: 10
-Sitemap: https://vibankruptcy.com/sitemap.xml.
+Sitemap: https://vibankruptcy.com/sitemap.xml
