@@ -100,33 +100,7 @@
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3793.381593432963!2d-64.91999928459224!3d18.33299857801429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c0510adb88ae201%3A0x9b9d054b022b35c6!2s5316%20Yacht%20Haven%20Grande%2C%20St%20Thomas%2C%20VI%2000802!5e0!3m2!1sen!2sus!4v1712500000000!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
         </div>
       </div>
-      <div>
-        <form id="consult-form" action="https://formsubmit.co/robert@pohlbankruptcy.com" method="POST" onsubmit="handleSubmit(event)">
-          <input type="hidden" name="_cc" value="davidlegal1975@pm.me" />
-          <input type="hidden" name="_captcha" value="false" />
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input id="name" name="name" type="text" required />
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" required />
-          </div>
-          <div class="form-group">
-            <label for="phone">Phone</label>
-            <input id="phone" name="phone" type="tel" />
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message"></textarea>
-          </div>
-          <button class="btn form-submit" type="submit">Submit</button>
-          <small class="confidential-note"><em>Your information is confidential. We will review your message and get back to you within one business day.</em></small>
-        </form>
-        <div id="thank-you">
-          <p>Thank you! We have received your inquiry and will contact you soon.</p>
-        </div>
-      </div>
+      <!-- Contact form removed -->
     </div>
   </section>
 
@@ -136,35 +110,7 @@
     &copy; 2025 viBankruptcy.com · POHL BANKRUPTCY, LLC · <a href="pay-online.html">Pay Online</a> · <a href="privacy-policy.html">Privacy Policy</a> · <a href="disclaimer.html">Disclaimer</a>
   </footer>
 
-  <script>
-    async function handleSubmit(e) {
-      e.preventDefault();
-      const form = e.target;
-      const formData = new FormData(form);
-      const data = Object.fromEntries(formData.entries());
-      try {
-        const robert = fetch('https://formsubmit.co/ajax/robert@pohlbankruptcy.com', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-          body: JSON.stringify(data)
-        });
-        const david = fetch('https://formsubmit.co/ajax/davidlegal1975@pm.me', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-          body: JSON.stringify(data)
-        });
-        const [rRes, dRes] = await Promise.all([robert, david]);
-        if (rRes.ok && dRes.ok) {
-          form.style.display = 'none';
-          document.getElementById('thank-you').style.display = 'block';
-        } else {
-          alert('There was a problem sending your message. Please try again later.');
-        }
-      } catch (err) {
-        alert('There was a problem sending your message. Please try again later.');
-      }
-    }
-  </script>
+  <!-- Contact form submission script removed -->
 
 <script>
   const menuToggle = document.getElementById('menu-toggle');
