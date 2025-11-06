@@ -198,21 +198,13 @@
         <p><em>Your information is confidential. We will respond within one business day.</em></p>
       </div>
       <div>
-        <form id="consult-form" action="https://formsubmit.co/robert@pohlbankruptcy.com" method="POST" onsubmit="handleSubmit(event)">
-          <input type="hidden" name="_cc" value="davidlegal1975@pm.me" />
-          <input type="hidden" name="_captcha" value="false" />
-          <label for="home-name">Name</label>
-          <input id="home-name" name="name" type="text" required />
-          <label for="home-email" style="margin-top:0.75rem;">Email</label>
-          <input id="home-email" name="email" type="email" required />
-          <label for="home-phone" style="margin-top:0.75rem;">Phone</label>
-          <input id="home-phone" name="phone" type="tel" />
-          <label for="home-message" style="margin-top:0.75rem;">Message</label>
-          <textarea id="home-message" name="message"></textarea>
-          <button class="btn" style="margin-top:1rem;" type="submit">Submit</button>
-        </form>
-        <div id="thank-you">
-          <p>Thank you! We have received your inquiry and will contact you soon.</p>
+        <div class="contact-card" style="background:#0d1b2a;padding:1.5rem;border-radius:12px;color:#fff;">
+          <p style="margin-top:0;">Reach out using the method that works best for you:</p>
+          <ul class="styled-list" style="color:#fff;">
+            <li><a href="mailto:robert@pohlbankruptcy.com" style="color:#fff;">Email our office</a></li>
+            <li><a href="tel:+13402033333" style="color:#fff;">Call 340-203-3333</a></li>
+            <li><a href="contact.html" style="color:#fff;">Schedule your free consultation</a></li>
+          </ul>
         </div>
       </div>
     </div>
@@ -305,36 +297,6 @@
   <footer>
     &copy; 2025 viBankruptcy.com · POHL BANKRUPTCY, LLC · <a href="pay-online.html">Pay Online</a> · <a href="privacy-policy.html">Privacy Policy</a> · <a href="disclaimer.html">Disclaimer</a>
   </footer>
-
-  <script>
-    async function handleSubmit(e) {
-      e.preventDefault();
-      const form = e.target;
-      const formData = new FormData(form);
-      const data = Object.fromEntries(formData.entries());
-      try {
-        const robert = fetch('https://formsubmit.co/ajax/robert@pohlbankruptcy.com', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-          body: JSON.stringify(data)
-        });
-        const david = fetch('https://formsubmit.co/ajax/davidlegal1975@pm.me', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-          body: JSON.stringify(data)
-        });
-        const [rRes, dRes] = await Promise.all([robert, david]);
-        if (rRes.ok && dRes.ok) {
-          form.style.display = 'none';
-          document.getElementById('thank-you').style.display = 'block';
-        } else {
-          alert('There was a problem sending your message. Please try again later.');
-        }
-      } catch (err) {
-        alert('There was a problem sending your message. Please try again later.');
-      }
-    }
-  </script>
 
 <script>
   const menuToggle = document.getElementById('menu-toggle');
